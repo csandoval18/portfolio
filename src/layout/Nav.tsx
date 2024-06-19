@@ -4,6 +4,7 @@ interface NavbarProps {}
 
 const Navbar: React.FC<NavbarProps> = () => {
   const [openMenu, setOpenMenu] = useState(false)
+
   return (
     <nav className="navbar container">
       <a href="/" className="logo">
