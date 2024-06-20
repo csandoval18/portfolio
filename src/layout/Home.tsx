@@ -1,5 +1,5 @@
 import React from "react"
-import blob from "../assets/blob.svg"
+// import blob from "../assets/blob.svg"
 import heroImg from "../assets/images/artboard4.png"
 
 interface HomeProps {}
@@ -27,32 +27,283 @@ const Home: React.FC<HomeProps> = () => {
         </div>
       </section>
 
-      <div className="container home-content">
+      <section className="Intro container">
+        <h2>Software Engineer</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-          corporis molestias eligendi, nam quasi ullam, consectetur perspiciatis
-          adipisci accusamus odit nesciunt architecto distinctio ad ipsam neque
-          esse maiores pariatur repellat.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-          corporis molestias eligendi, nam quasi ullam, consectetur perspiciatis
-          adipisci accusamus odit nesciunt architecto distinctio ad ipsam neque
-          esse maiores pariatur repellat.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-          corporis molestias eligendi, nam quasi ullam, consectetur perspiciatis
-          adipisci accusamus odit nesciunt architecto distinctio ad ipsam neque
-          esse maiores pariatur repellat.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-          corporis molestias eligendi, nam quasi ullam, consectetur perspiciatis
-          adipisci accusamus odit nesciunt architecto distinctio ad ipsam neque
-          esse maiores pariatur repellat.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
         </p>
-      </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem
+          unde veritatis vitae facere, sit blanditiis id consequatur veniam quia
+          officiis, temporibus, nobis excepturi quos ad et impedit reprehenderit
+          quas?
+        </p>
+        {/* Carousel of icons with skills */}
+      </section>
     </section>
   )
 }

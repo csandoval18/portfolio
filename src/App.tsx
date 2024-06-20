@@ -5,7 +5,7 @@ import Nav from "./layout/Nav"
 function App() {
   return (
     <main>
-      <div className="grain-texture">
+      <div className="App">
         <Nav />
         <Home />
         <Footer />
