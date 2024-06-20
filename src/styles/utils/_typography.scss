@@ -52,11 +52,15 @@
 }
 
 @font-face {
-  font-family: "Grotley";
+  font-family: "Grotley Regular";
   src: url("./src/assets/fonts/grotley-font/GrotleyRegular-mLEWv.otf")
-      format("opentype"),
-    url("./src/assets/fonts/grotley-font/GrotleyItalic-7BD9D.otf")
-      format("opentype");
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Grotley Italic";
+  src: url("./src/assets/fonts/grotley-font/GrotleyItalic-7BD9D.otf")
+    format("opentype");
 }
 
 @font-face {
@@ -168,15 +172,26 @@
 }
 
 @font-face {
-  font-family: "Cellofy Black Expanded";
-  src: url("./src/assets/fonts/cellofy-font/CellofyBlackexpanded-x3YKr")
+  font-family: "Cellofy Black Expandead";
+  src: url("./src/assets/fonts/cellofy-font/CellofyBlackexpanded-x3YKr.otf")
     format("opentype");
 }
 
 @font-face {
   font-family: "Mellion Black";
-  src: url("./src/assets/fonts/cellofy-font/CellofyBlackexpanded-x3YKr")
+  src: url("./src/assets/fonts/melion-font/MelionBlack-DO5O0")
     format("opentype");
+}
+
+@font-face {
+  font-family: "Notted";
+  src: url("./src/assets/fonts/notted/Notted.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playball";
+  src: url("./src/assets/fonts/playball/Playball-Regular.ttf")
+    format("truetype");
 }
 
 * {

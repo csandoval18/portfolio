@@ -1,6 +1,7 @@
 .navbar {
   align-items: center;
-  background-color: rgba($b, 0.2);
+  // background-color: rgba($b, 0.2);
+  // background-color: rgba($b, 1);
   backdrop-filter: blur(15px);
   box-shadow: 4px 2px 30px 12px rgba(22, 22, 22, 0.098);
   display: flex;
@@ -18,7 +19,7 @@
     // font-family: "GladioraDemo";
     color: $b;
     font-family: "AhganiryaFont";
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     letter-spacing: 0.1rem;
   }
 }
@@ -89,12 +90,12 @@
       background-color: transparent;
 
       &::before {
-        background-color: $w;
+        background-color: $primary;
         transform: rotate(45deg);
       }
 
       &::after {
-        background-color: $w;
+        background-color: $primary;
         transform: rotate(-45deg);
       }
     }
@@ -102,13 +103,13 @@
 }
 
 .hamburger {
-  background-color: $w;
+  background-color: $b;
   height: $hamburgerBarHeight;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in;
   width: 100%;
 
   &::before {
-    background-color: $w;
+    background-color: $b;
     content: "";
     display: block;
     height: $hamburgerBarHeight;
@@ -119,7 +120,7 @@
   }
 
   &::after {
-    background-color: $w;
+    background-color: $b;
     content: "";
     display: block;
     height: $hamburgerBarHeight;
@@ -152,7 +153,7 @@
     a {
       background-color: transparent;
       border: none;
-      color: $w;
+      color: $b;
       padding: 1rem 0;
 
       &::after {
@@ -167,13 +168,13 @@
 
       &:hover::after {
         height: 2px;
-        background-color: $w;
+        background-color: $primary;
         width: 100%;
       }
 
       &:hover {
         background-color: transparent;
-        color: $w !important;
+        color: $primary !important;
       }
     }
   }

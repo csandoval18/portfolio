@@ -8,11 +8,6 @@
   min-height: calc(100vh + 20px);
 
   .hero-layout {
-    // background-image: url(./src/assets/images/artboard6.png);
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // transform: rotate(180deg);
     display: flex;
     flex: 1;
     justify-content: space-between;
@@ -29,8 +24,7 @@
         object-fit: cover;
         rotate: 180;
         width: 100%;
-        rotate: 130deg;
-        z-index: 1;
+        rotate: 132deg;
         scale: 0.5;
       }
     }
@@ -52,13 +46,16 @@
     // background: linear-gradient(to right, #bbcde5 0%, #596475);
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
-    // font-family: "Samsung Sharp Sans Bold" !important;
+    font-family: "Samsung Sharp Sans Bold" !important;
     // font-family: "Misegar";
-    // font-family: "Grotley";
+    // font-family: "Grotley Italic";
+    // font-family: "AhganiryaFont";
     // font-family: "GladioraDemo";
-    font-family: "Mangolia";
+    // font-family: "Mangolia";
     // font-family: "Beautica";
-    // font-family: "Cellofy Black";
+    // font-family: "Notted";
+    // font-family: "Playball";
+    // font-family: "RoleModelFont";
     // font-family: "Cellofy Black Expandead";
 
     align-items: center;
@@ -67,7 +64,9 @@
     font-size: 8rem;
     flex-direction: column;
     justify-content: center;
-    line-height: 8rem;
+    // letter-spacing: 0.4rem;
+    line-height: 8.5rem;
+    letter-spacing: 0.2rem;
     width: 100%;
 
     .first-name,
@@ -76,7 +75,7 @@
     }
     .second-last-name {
       // color: #a9fdac;
-      color: #639fab;
+      color: #84afe6;
     }
 
     &::after {
@@ -85,7 +84,7 @@
       background-color: $b;
       display: block;
       margin-top: 1.5rem;
-      width: 15%;
+      width: 30%;
       height: 6px;
     }
   }
@@ -96,10 +95,11 @@
     display: flex;
     flex: 1;
     justify-content: center;
-  }
 
-  .home-content {
-    z-index: 100;
+    .header-wrapper {
+      padding: 6rem 10rem;
+      border-radius: 2rem;
+    }
   }
 }
 
