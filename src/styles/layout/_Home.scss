@@ -2,6 +2,97 @@
 }
 
 .Hero {
-  background-color: bisque;
-  min-height: 100vh;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  min-height: calc(100vh + 20px);
+
+  .hero-layout {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 6rem;
+    min-height: calc(100vh + 20px);
+    width: 100%;
+
+    .design {
+      background-image: url(./src/assets/images/artboard.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      flex: 1;
+      height: calc(100vh + 20px);
+    }
+
+    & > * {
+      align-items: center;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  h1 {
+    // font-family: "Samsung Sharp Sans Bold" !important;
+    // font-family: "Misegar";
+    // font-family: "Grotley";
+    // font-family: "GladioraDemo";
+    align-items: center;
+    color: $b;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-family: "Mangolia";
+    font-size: 5.5rem;
+    justify-content: center;
+    line-height: 5rem;
+    max-width: 550px;
+    &::after {
+      content: "";
+      // background-color: #96ebcf;
+      background-color: $b;
+      display: block;
+      margin-top: 1.5rem;
+      width: 25%;
+      height: 6px;
+    }
+  }
+
+  .title {
+    align-items: center;
+    background-color: transparent;
+    // background-color: rgb(99, 159, 171);
+    // background-color: rgb(187, 205, 229);
+    // box-shadow: 30px 40px 0px 2px rgb(34, 34, 34);
+    // box-shadow: 30px 40px 0px 2px rgb(99, 159, 171);
+    // box-shadow: 30px 40px 30px 2px rgba(22, 22, 22, 0.308);
+    border-radius: 1.2rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    // padding: 4.5rem 4rem 3rem 4rem;
+    width: 50%;
+  }
+
+  .blob-wrapper {
+    img {
+      display: block;
+      width: 800px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .Hero {
+    .hero-layout {
+      .title {
+      }
+    }
+  }
 }

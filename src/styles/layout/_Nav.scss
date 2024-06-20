@@ -1,14 +1,25 @@
 .navbar {
   align-items: center;
-  background-color: rgba($b, 0.2);
+  background-color: rgba($b, 0.08);
   backdrop-filter: blur(15px);
   display: flex;
-  height: 5rem;
   margin-bottom: -80px; // Overlap header with page content
   justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 1000;
+
+  .logo {
+    // font-family: "Samsung Sharp Sans Bold" !important;
+    font-family: "Misegar";
+    // font-family: "Mangolia";
+    // font-family: "Grotley";
+    // font-family: "GladioraDemo";
+    color: $b;
+    font-family: "AhganiryaFont";
+    font-size: 0.95rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 .navMenuWrapper {
@@ -46,10 +57,11 @@
 
   a {
     border-bottom: 1px solid rgba($grey, 0.5);
-    color: $w !important;
+    // color: $w !important;
+    color: $b !important;
     display: block;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 600;
     padding: 2.5rem 0;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
@@ -147,7 +159,6 @@
         content: "";
         display: block;
         height: 2px;
-        margin-top: 4px;
         transition: width 0.2s ease-in-out;
         width: 0;
       }
