@@ -115,6 +115,70 @@
     format("opentype");
 }
 
+@font-face {
+  font-family: "Archimoto Font Black";
+  src: url("./src/assets/fonts/archimoto-font/Demoarchimotov01Black-8MD5g.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Archimoto Font Black Italic";
+  src: url("./src/assets/fonts/Demoarchimotov01Blackitalic-Yz9rO")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Archimoto Font Italic";
+  src: url("./src/assets/fonts/archimoto-font/Demoarchimotov01Medium-rg1Ky")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Archimoto Font Italic";
+  src: url("./src/assets/fonts/archimoto-font/Demoarchimotov01Mediumitalic-MVqXJ")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Archimoto Font Thin";
+  src: url("./src/assets/fonts/archimoto-font/Demoarchimotov01Thin-K7DPy")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Archimoto Font Thin Italic";
+  src: url("./src/assets/fonts/archimoto-font/Demoarchimotov01Thinitalic-2Oz5d")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Beautica";
+  src: url("./src/assets/fonts/beautica/Beautica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bresley";
+  src: url("./src/assets/fonts/bresley/Bresley.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cellofy Black";
+  src: url("./src/assets/fonts/cellofy-font/CellofyBlack-vmBrA.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Cellofy Black Expanded";
+  src: url("./src/assets/fonts/cellofy-font/CellofyBlackexpanded-x3YKr")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Mellion Black";
+  src: url("./src/assets/fonts/cellofy-font/CellofyBlackexpanded-x3YKr")
+    format("opentype");
+}
+
 * {
   // font-family: "Samsung Sharp Sans Bold" !important;
   // font-family: "Misegar";
@@ -122,14 +186,18 @@
   // font-family: "Grotley";
   // font-family: "GladioraDemo";
   // font-size: 1.4rem !important;
-  font-family: "Samsung Sharp Sans Regular";
-  font-weight: 500;
-  font-size: 22px;
 }
 
 a,
 p,
-li,
-ul {
+div,
+span li,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Samsung Sharp Sans Regular";
 }

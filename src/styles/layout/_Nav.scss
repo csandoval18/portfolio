@@ -1,7 +1,8 @@
 .navbar {
   align-items: center;
-  background-color: rgba($b, 0.08);
+  background-color: rgba($b, 0.2);
   backdrop-filter: blur(15px);
+  box-shadow: 4px 2px 30px 12px rgba(22, 22, 22, 0.098);
   display: flex;
   margin-bottom: -80px; // Overlap header with page content
   justify-content: space-between;
@@ -155,16 +156,18 @@
       padding: 1rem 0;
 
       &::after {
-        background-color: $w;
+        background-color: $b;
         content: "";
         display: block;
         height: 2px;
-        transition: width 0.2s ease-in-out;
+        transition: width 0.2s ease-in-out, background-color 0.3s ease-in-out,
+          color 0.3s ease-in-out;
         width: 0;
       }
 
       &:hover::after {
         height: 2px;
+        background-color: $w;
         width: 100%;
       }
 

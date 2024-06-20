@@ -15,7 +15,7 @@ function App() {
           <filter id="grain-texture">
             <feTurbulence
               type="turbulence"
-              baseFrequency="0.3"
+              baseFrequency="0.5"
               result="turbulence"
             />
             <feColorMatrix
