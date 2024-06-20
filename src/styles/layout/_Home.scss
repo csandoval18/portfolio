@@ -89,10 +89,15 @@
 }
 
 @media (min-width: $tablet) {
-  .Hero {
-    .hero-layout {
-      .title {
-      }
+  .Hero .hero-layout .title {
+    h1 {
+      font-size: 6rem;
+      line-height: 5rem;
+      background: #96ebcf;
+      background: linear-gradient(to right, #96ebcf 0%, #8a84e2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      height: 100%;
     }
   }
 }
