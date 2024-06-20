@@ -60,7 +60,7 @@
   a {
     border-bottom: 1px solid rgba($grey, 0.5);
     // color: $w !important;
-    color: $b !important;
+    color: $w !important;
     display: block;
     font-size: 16px;
     font-weight: 600;
@@ -73,7 +73,7 @@
 
     &:hover {
       background-color: $primary;
-      color: $b !important;
+      color: $b;
     }
   }
 }
@@ -153,7 +153,6 @@
     a {
       background-color: transparent;
       border: none;
-      color: $b;
       padding: 1rem 0;
 
       &::after {

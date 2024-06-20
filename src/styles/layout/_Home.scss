@@ -43,30 +43,14 @@
   }
 
   h1 {
-    // background: linear-gradient(to right, #bbcde5 0%, #596475);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
     font-family: "Samsung Sharp Sans Bold" !important;
-    // font-family: "Misegar";
-    // font-family: "Grotley Italic";
-    // font-family: "AhganiryaFont";
-    // font-family: "GladioraDemo";
-    // font-family: "Mangolia";
-    // font-family: "Beautica";
-    // font-family: "Notted";
-    // font-family: "Playball";
-    // font-family: "RoleModelFont";
-    // font-family: "Cellofy Black Expandead";
-
     align-items: center;
-    color: $b;
     display: flex;
-    font-size: 8rem;
+    font-size: 3.8rem;
     flex-direction: column;
     justify-content: center;
-    // letter-spacing: 0.4rem;
-    line-height: 8.5rem;
-    letter-spacing: 0.2rem;
+    line-height: 4rem;
+    letter-spacing: -0.08rem;
     width: 100%;
 
     .first-name,
@@ -80,12 +64,11 @@
 
     &::after {
       content: "";
-      // background-color: #96ebcf;
       background-color: $b;
       display: block;
       margin-top: 1.5rem;
       width: 30%;
-      height: 6px;
+      height: 5px;
     }
   }
 
@@ -104,28 +87,20 @@
 }
 
 .home-content {
+  padding: 4rem 0;
   z-index: 100;
 }
 
-// @media (min-width: $tablet) {
-//   .Hero .hero-layout .title {
-//     h1 {
-//       // font-size: 6rem;;
-//       // line-height: 7.5rem;
-//       height: 100%;
-
-//     }
-
-//     .header-wrapper {
-//       // background-color: transparent;
-//       // background-color: rgb(99, 159, 171);
-//       // background-color: rgb(187, 205, 229);
-//       // box-shadow: 30px 40px 0px 2px rgb(34, 34, 34);
-//       // box-shadow: 30px 40px 0px 2px rgb(99, 159, 171);
-//       // box-shadow: 30px 40px 30px 2px rgba(22, 22, 22, 0.308);
-//       background-color: $b;
-//       box-shadow: 30px 40px 30px 2px rgba(22, 22, 22, 0.308);
-//       padding: 4.5rem 4rem 3rem 4rem;
-//     }
-//   }
-// }
+@media (min-width: $tablet) {
+  .Hero .hero-layout .title {
+    .header-wrapper h1 {
+      align-items: center;
+      font-size: 8rem;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 8.5rem;
+      letter-spacing: 0.2rem;
+      width: 100%;
+    }
+  }
+}
