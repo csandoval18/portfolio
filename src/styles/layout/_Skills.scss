@@ -1,0 +1,32 @@
+.Skills {
+  padding-top: 8rem;
+}
+
+.intro {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .intro {
+    text-align: center;
+    padding-bottom: 8rem;
+
+    h2 {
+      margin-bottom: 70px;
+    }
+
+    .intro-p {
+      color: lighten($fg, 25);
+      // font-family: "Grotley Regular";
+      // font-family: "RoleModelFont";
+      font-family: "Archimoto Font Black";
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 3.2rem;
+    }
+  }
+}

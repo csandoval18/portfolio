@@ -5,7 +5,7 @@ interface EducationProps {}
 const Education: React.FC<EducationProps> = () => {
   return (
     <section className="Education">
-      <h2>Education</h2>
+      <h2 className="center-heading">Education</h2>
     </section>
   )
 }

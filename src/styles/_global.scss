@@ -1,6 +1,6 @@
-@import "./utils/variables.scss", "./components/buttons",
+@import "./utils/variables.scss", "./utils/layout.scss", "./components/buttons",
   "./components/carousel", "./utils/typography.scss", "./layout/Nav.scss",
-  "./layout/Footer.scss", "./layout/Home.scss", "./layout/Home.scss";
+  "./layout/Skills.scss", "./layout/Footer.scss", "./pages/Home.scss";
 
 * {
   margin: 0;
@@ -124,15 +124,6 @@ h5 {
     margin-top: 1rem;
     width: 100px;
   }
-}
-
-.center-headings {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 5rem;
 }
 
 // Interior pages
