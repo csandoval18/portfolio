@@ -1,19 +1,42 @@
 import React from "react"
 import Carousel from "../components/Carousel"
+import { GiCyberEye } from "react-icons/gi"
 
 interface SkillsProps {}
 
-let skills = {
-  languages = {
-    cagegory: "",
+const techStack = {
+  Languages: {
+    header: "Languages",
+    items: ["JavaScript", "TypeScript", "Python", "Java", "C++", "Ruby"],
+  },
+  FrameworksLibraries: {
+    header: "Frameworks/Libraries",
+    items: ["React", "Vue.js", "Angular", "Express", "Django", "Flask"],
+  },
+  Databases: {
+    header: "Databases",
+    items: ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "Redis"],
+  },
+  DevOps: {
+    header: "Dev/Ops",
+    items: [
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "GitHub Actions",
+      "AWS",
+      "Azure",
+    ],
   },
 }
 
 const Skills: React.FC<SkillsProps> = () => {
   return (
     <section className="Skills">
-      <h2 className="center-heading">Skills</h2>
-
+      <div className="category-header">
+        <GiCyberEye />
+        <h2>Skills</h2>
+      </div>
       <section className="intro container">
         <div className="card">
           <h3>Software Engineer</h3>
@@ -31,17 +54,17 @@ const Skills: React.FC<SkillsProps> = () => {
 
       <Carousel />
 
-      <div className="skill-wrapper">
-        <h4>Languages</h4>
-      </div>
-      <div className="skill-wrapper">
-        <h4>Frameworks/Libraries</h4>
-      </div>
-      <div className="skill-wrapper">
-        <h4>Databases</h4>
-      </div>
-      <div className="skill-wrapper">
-        <h4>Dev/Ops</h4>
+      <div className="skill-wrapper container">
+        {Object.entries(techStack).map(([category, data]) => (
+          <div key={category}>
+            <h4>{data.header}</h4>
+            <ul>
+              {data.items.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   )
