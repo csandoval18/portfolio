@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { FaPiedPiper } from "react-icons/fa"
 
 interface NavbarProps {}
 
@@ -9,6 +10,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     <nav className="navbar container">
       <a href="/" className="logo">
         {/* <Image src="/logo-w.webp" alt="" width={100} height={60}></Image> */}
+        <FaPiedPiper />
         CAS
       </a>
       <div
@@ -21,13 +23,13 @@ const Navbar: React.FC<NavbarProps> = () => {
       >
         <ul className="navMenu">
           <li>
-            <a href="#">Profile</a>
-          </li>
-          <li>
             <a href="#">Skills</a>
           </li>
           <li>
             <a href="#">Education</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
           </li>
           <li>
             <a href="#">Contact</a>

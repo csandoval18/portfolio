@@ -1,8 +1,8 @@
 import React from "react"
 import Carousel from "../components/Carousel"
-// import blob from "../assets/blob.svg"
-// import heroImg from "../assets/images/artboard4.png"
-// import heroImg from "../assets/images/hero-design1.png"
+import Education from "./Education"
+import Skills from "./Skills"
+import Contact from "./Contact"
 
 interface HomeProps {}
 
@@ -28,9 +28,7 @@ const Home: React.FC<HomeProps> = () => {
               </div>
             </div>
           </div>
-          <div className="design">
-            {/* <img src={heroImg} alt="heroImg" /> */}
-          </div>
+          <div className="design"></div>
         </div>
       </section>
 
@@ -48,11 +46,12 @@ const Home: React.FC<HomeProps> = () => {
             applications.
           </p>
         </div>
-
-        {/* Carousel of icons with skills */}
       </section>
 
       <Carousel />
+      <Skills />
+      <Education />
+      <Contact />
     </section>
   )
 }
