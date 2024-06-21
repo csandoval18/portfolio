@@ -1,14 +1,22 @@
 .navbar {
   align-items: center;
-  background-color: rgba($b, 0.2);
+  // background-color: rgba($b, 0.2);
+  background-color: rgba($w, 0.7);
   backdrop-filter: blur(15px);
+  box-shadow: 4px 2px 30px 12px rgba(22, 22, 22, 0.098);
   display: flex;
-  height: 5rem;
-  margin-bottom: -80px; // Overlap header with page content
   justify-content: space-between;
+  margin-bottom: -80px; // Overlap header with page content
   position: sticky;
   top: 0;
   z-index: 1000;
+
+  .logo {
+    color: $b;
+    font-family: "AhganiryaFont";
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 .navMenuWrapper {
@@ -29,7 +37,7 @@
 }
 
 .navMenu {
-  background-color: $background;
+  background-color: $bg;
   height: 100vh;
   left: -100%;
   list-style: none;
@@ -46,10 +54,10 @@
 
   a {
     border-bottom: 1px solid rgba($grey, 0.5);
-    color: $w !important;
+    color: $w;
     display: block;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 600;
     padding: 2.5rem 0;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
@@ -59,7 +67,7 @@
 
     &:hover {
       background-color: $primary;
-      color: $b !important;
+      color: $b;
     }
   }
 }
@@ -76,12 +84,12 @@
       background-color: transparent;
 
       &::before {
-        background-color: $w;
+        background-color: $primary;
         transform: rotate(45deg);
       }
 
       &::after {
-        background-color: $w;
+        background-color: $primary;
         transform: rotate(-45deg);
       }
     }
@@ -89,13 +97,13 @@
 }
 
 .hamburger {
-  background-color: $w;
+  background-color: $b;
   height: $hamburgerBarHeight;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in;
   width: 100%;
 
   &::before {
-    background-color: $w;
+    background-color: $b;
     content: "";
     display: block;
     height: $hamburgerBarHeight;
@@ -106,7 +114,7 @@
   }
 
   &::after {
-    background-color: $w;
+    background-color: $b;
     content: "";
     display: block;
     height: $hamburgerBarHeight;
@@ -139,27 +147,28 @@
     a {
       background-color: transparent;
       border: none;
-      color: $w;
+      color: $b;
       padding: 1rem 0;
 
       &::after {
-        background-color: $w;
+        background-color: $b;
         content: "";
         display: block;
         height: 2px;
-        margin-top: 4px;
-        transition: width 0.2s ease-in-out;
+        transition: width 0.2s ease-in-out, background-color 0.3s ease-in-out,
+          color 0.3s ease-in-out;
         width: 0;
       }
 
       &:hover::after {
         height: 2px;
+        background-color: $b;
         width: 100%;
       }
 
       &:hover {
         background-color: transparent;
-        color: $w !important;
+        color: $b !important;
       }
     }
   }

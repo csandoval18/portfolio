@@ -9,7 +9,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     <nav className="navbar container">
       <a href="/" className="logo">
         {/* <Image src="/logo-w.webp" alt="" width={100} height={60}></Image> */}
-        Logo
+        CAS
       </a>
       <div
         onClick={() => {
@@ -21,16 +21,16 @@ const Navbar: React.FC<NavbarProps> = () => {
       >
         <ul className="navMenu">
           <li>
-            <a href="#">Services</a>
+            <a href="#">Profile</a>
           </li>
           <li>
-            <a href="#">Locations</a>
+            <a href="#">Skills</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#">Education</a>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="#">Contact</a>
           </li>
         </ul>
       </div>

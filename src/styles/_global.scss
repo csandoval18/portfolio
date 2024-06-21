@@ -1,15 +1,17 @@
-@import "./utils/variables", "./layout/Nav.scss", "./layout/Footer.scss",
-  "./layout/Home.scss", "./layout/Home.scss";
+@import "./utils/variables.scss", "./components/buttons",
+  "./components/carousel", "./utils/typography.scss", "./layout/Nav.scss",
+  "./layout/Footer.scss", "./layout/Home.scss", "./layout/Home.scss";
 
 * {
   margin: 0;
 }
 
 html,
-body {
+body,
+main {
   // background-image: url("https://www.transparenttextures.com/patterns/xv.png");
-  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
-  background-color: var(--bg);
+  // background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  background-color: $bg;
   margin: 0;
   overflow-x: clip;
   scroll-behavior: auto !important;
@@ -22,6 +24,7 @@ h4,
 h5,
 h6,
 p {
+  color: $fg;
   margin-bottom: 15px;
   margin-top: 0;
 }
@@ -123,31 +126,6 @@ h5 {
   }
 }
 
-// Custom Buttons
-
-.btn {
-  display: block;
-  font-size: 1.2rem !important;
-  padding: 12px 22px;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  text-decoration: none;
-  width: fit-content;
-}
-
-.btn-primary {
-  background-color: $secondary;
-  border-radius: 14px;
-  border: none;
-  box-shadow: 1px 1px 5px -4px rgb(0, 0, 0);
-  color: $w !important;
-  font-size: 1.2rem !important;
-
-  &:hover {
-    background-color: $primary;
-    color: $b !important;
-  }
-}
-
 .center-headings {
   align-items: center;
   display: flex;
@@ -217,11 +195,30 @@ h5 {
 // }
 
 .container {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
 
-  @media (min-width: $mobileL) {
-    padding-right: 10rem;
-    padding-left: 10rem;
+  @media (min-width: $mobileLX) {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
   }
+
+  @media (min-width: $tablet) {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+  }
+
+  @media (min-width: $laptop) {
+    padding-right: 8rem !important;
+    padding-left: 8rem !important;
+  }
+
+  @media (min-width: $laptopM) {
+    padding-right: 10rem !important;
+    padding-left: 10rem !important;
+  }
+}
+
+.grain-texture {
+  filter: url(#grain-texture);
 }

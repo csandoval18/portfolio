@@ -1,0 +1,75 @@
+// Custom Buttons
+
+.btn {
+  display: block;
+  font-size: 1.2rem !important;
+  padding: 12px 22px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.btn-primary {
+  background-color: $obg;
+  border: 4px solid $obg;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.15);
+  color: $w;
+  font-size: 1.2rem !important;
+  padding: 1.5rem 2rem;
+  position: relative;
+  transition: background-color 0.3s ease-in, border 0.3s ease-in,
+    color 0.3s ease-in;
+
+  &:hover {
+    background-color: $primary;
+    border: 4px solid $primary;
+    color: $b !important;
+  }
+}
+
+.btn-border {
+  background-color: transparent;
+  border: 4px solid $b;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.15);
+  color: $fg;
+  font-size: 1.2rem !important;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  padding: 1.5rem 2rem;
+  position: relative;
+
+  &::after {
+    background-color: $secondary;
+    transition: width 0.3s ease-in;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $w !important;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+// card css
+.card {
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  border-radius: 1.2rem;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.098);
+  // filter: url(#grain-texture);
+  padding: 4rem;
+  max-width: 900px;
+  transition: background-color 0.3s ease-in;
+
+  &:hover {
+    background-color: rgba($contrast, 1);
+  }
+}
