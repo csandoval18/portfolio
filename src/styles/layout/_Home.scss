@@ -46,7 +46,6 @@
     }
 
     h1 {
-      font-family: "Samsung Sharp Sans Bold" !important;
       align-items: center;
       display: flex;
       font-size: 3.8rem;
@@ -97,6 +96,10 @@
   }
 
   .Intro {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding: 4rem 0;
     text-align: center;
   }
