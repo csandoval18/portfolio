@@ -11,7 +11,7 @@ const Footer: React.FC<FooterProps> = () => {
         <div className="footer-block"></div>
         <div className="footer-block"></div>
       </div>
-      <div className="logo">
+      <div>
         <a href="/" className="logo">
           <FaPiedPiper />
           CAS
