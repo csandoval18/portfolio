@@ -61,7 +61,9 @@
       }
       .second-last-name {
         // color: #a9fdac;
-        color: #84afe6;
+        color: $primary;
+        transition: color 0.3s ease;
+        animation: color-change 10s infinite;
       }
 
       &::after {
@@ -144,5 +146,27 @@
         line-height: 3.2rem;
       }
     }
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: $primary; /* Start with primary color */
+  }
+
+  25% {
+    color: $secondary; /* Change to secondary color 1 */
+  }
+
+  50% {
+    color: $contrast; /* Change to secondary color 2 */
+  }
+
+  75% {
+    color: $obg; /* Change to secondary color 3 */
+  }
+
+  100% {
+    color: $primary; /* Return to primary color */
   }
 }

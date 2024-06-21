@@ -23,7 +23,7 @@ const Home: React.FC<HomeProps> = () => {
                   Learn More
                 </a>
                 <a className="btn btn-border" href="/contact">
-                  Get in contact
+                  Contact Info
                 </a>
               </div>
             </div>
