@@ -1,4 +1,7 @@
 import React, { useEffect, useRef } from "react"
+import { IoLogoJavascript } from "react-icons/io"
+import { RiJavascriptLine } from "react-icons/ri"
+import { SiJavascript, SiTypescript } from "react-icons/si"
 
 interface CarouselProps {}
 
@@ -15,32 +18,11 @@ const Carousel: React.FC<CarouselProps> = () => {
 
   return (
     <div className="Carousel">
-      <div className="logo-slider" data-v-4ef8651c="" ref={logoSliderRef}>
-        <div className="logos-slide" data-v-4ef8651c="" ref={logosSlideRef}>
-          <img
-            src="https://i.ibb.co/Vv5rkDK/api-partner-verzon.png"
-            data-v-4ef8651c=""
-          />
-          <img
-            src="https://i.ibb.co/J399KDg/api-partner-netflix.png"
-            data-v-4ef8651c=""
-          />
-          <img
-            src="https://i.ibb.co/TKT0F5L/api-partner-yelp.png"
-            data-v-4ef8651c=""
-          />
-          <img
-            src="https://i.ibb.co/HG6KR89/api-partner-adobe.png"
-            data-v-4ef8651c=""
-          />
-          <img
-            src="https://i.ibb.co/hMSJ1sg/api-partner-ring.png"
-            data-v-4ef8651c=""
-          />
-          <img
-            src="https://i.ibb.co/4RWQcMS/api-partner-nespresso.png"
-            data-v-4ef8651c=""
-          />
+      <div className="logo-slider" ref={logoSliderRef}>
+        <div className="logos-slide" ref={logosSlideRef}>
+          <SiJavascript className="icon" />
+          <SiTypescript className="icon" />
+          <RiJavascriptLine className="icon" />
         </div>
       </div>
     </div>

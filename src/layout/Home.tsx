@@ -44,10 +44,11 @@ const Home: React.FC<HomeProps> = () => {
           Below are some of the technologies I excel in, each playing a crucial
           role in my ability to create innovative and efficient applications.
         </p>
-        <Carousel />
 
         {/* Carousel of icons with skills */}
       </section>
+
+      <Carousel />
     </section>
   )
 }
