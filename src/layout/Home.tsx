@@ -35,15 +35,19 @@ const Home: React.FC<HomeProps> = () => {
       </section>
 
       <section className="Intro container">
-        <h2>Software Engineer Stats</h2>
-        <p className="intro-p">
-          As a passionate and dedicated Software Engineer, I specialize in
-          designing and developing high-quality software solutions. My journey
-          in technology has equipped me with a diverse skill set and a deep
-          understanding of various programming languages, frameworks, and tools.
-          Below are some of the technologies I excel in, each playing a crucial
-          role in my ability to create innovative and efficient applications.
-        </p>
+        <h2>Software Engineer</h2>
+        <div className="card">
+          <h3>Skills</h3>
+          <p className="intro-p">
+            As a passionate and dedicated Software Engineer, I specialize in
+            designing and developing high-quality software solutions. My journey
+            in technology has equipped me with a diverse skill set and a deep
+            understanding of various programming languages, frameworks, and
+            tools. Below are some of the technologies I excel in, each playing a
+            crucial role in my ability to create innovative and efficient
+            applications.
+          </p>
+        </div>
 
         {/* Carousel of icons with skills */}
       </section>
