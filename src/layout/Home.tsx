@@ -35,7 +35,7 @@ const Home: React.FC<HomeProps> = () => {
       </section>
 
       <section className="Intro container">
-        <h2>Software Engineer</h2>
+        <h2>Software Engineer Stats</h2>
         <p className="intro-p">
           As a passionate and dedicated Software Engineer, I specialize in
           designing and developing high-quality software solutions. My journey
