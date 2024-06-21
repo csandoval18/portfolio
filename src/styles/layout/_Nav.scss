@@ -1,7 +1,7 @@
 .navbar {
   align-items: center;
   // background-color: rgba($b, 0.2);
-  background-color: rgba($w, 1);
+  background-color: rgba($w, 0.7);
   backdrop-filter: blur(15px);
   box-shadow: 4px 2px 30px 12px rgba(22, 22, 22, 0.098);
   display: flex;
@@ -162,13 +162,13 @@
 
       &:hover::after {
         height: 2px;
-        background-color: $primary;
+        background-color: $b;
         width: 100%;
       }
 
       &:hover {
         background-color: transparent;
-        color: $primary !important;
+        color: $b !important;
       }
     }
   }
