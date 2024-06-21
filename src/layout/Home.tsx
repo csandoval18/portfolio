@@ -1,6 +1,7 @@
 import React from "react"
 // import blob from "../assets/blob.svg"
-import heroImg from "../assets/images/artboard4.png"
+// import heroImg from "../assets/images/artboard4.png"
+// import heroImg from "../assets/images/hero-design1.png"
 
 interface HomeProps {}
 
@@ -16,14 +17,19 @@ const Home: React.FC<HomeProps> = () => {
                 <span className="first-last-name">Alvites</span>{" "}
                 <span className="second-last-name">Sandoval</span>
               </h1>
+              <div className="hero-btns-layout">
+                <a className="btn btn-primary" href="/contact">
+                  Learn More
+                </a>
+                <a className="btn btn-border" href="/contact">
+                  Get in contact
+                </a>
+              </div>
             </div>
           </div>
           <div className="design">
-            <img src={heroImg} alt="heroImg" />
+            {/* <img src={heroImg} alt="heroImg" /> */}
           </div>
-          {/* <div className="blob-wrapper">
-            <img src={blob} alt="Blob svg" />
-          </div> */}
         </div>
       </section>
 
