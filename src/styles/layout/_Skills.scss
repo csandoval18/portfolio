@@ -9,6 +9,10 @@
   flex-direction: column;
   text-align: center;
 
+  .intro-p {
+    font-family: "Archimoto Font Black";
+  }
+
   .card {
     background-color: $w;
     transition: 0.3s color ease-in, background-color 0.3s ease-in;
@@ -103,23 +107,6 @@
         width: 0%; /* Initial width of the filled portion */
         transition: width 0.3s ease-in-out; /* Smooth transition for width changes */
       }
-    }
-  }
-
-  .category-header {
-    align-items: center;
-    background-color: $contrast;
-    display: flex;
-    padding-top: 1rem;
-    text-align: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 6rem;
-
-    svg {
-      font-size: 3.2rem;
-
-      margin-bottom: 1rem;
     }
   }
 }

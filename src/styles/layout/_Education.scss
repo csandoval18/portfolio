@@ -6,7 +6,8 @@
     justify-content: center;
     padding-bottom: 8rem;
 
-    h3 {
+    h3,
+    h4 {
       align-items: center;
       display: flex;
       gap: 0.8rem;
@@ -16,6 +17,16 @@
         color: $secondary;
         font-family: "Samsung Sharp Sans Bold";
       }
+    }
+
+    h3 {
+      &::after {
+        content: "";
+      }
+    }
+
+    h4 {
+      font-family: "Archimoto Font Black" !important;
     }
 
     p {

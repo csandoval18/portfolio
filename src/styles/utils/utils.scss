@@ -1,0 +1,105 @@
+//  Headers
+.center-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.category-header {
+  align-items: center;
+  background-color: $contrast;
+  display: flex;
+  padding-top: 1rem;
+  text-align: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 6rem;
+
+  svg {
+    font-size: 3.2rem;
+
+    margin-bottom: 1rem;
+  }
+}
+
+// Page logo
+
+.logo {
+  color: $w;
+  cursor: pointer;
+  scale: 1;
+  transition: scale 0.4s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  .logo-icon {
+    color: $w;
+    font-size: 32px;
+  }
+
+  &:hover {
+    scale: 1.08;
+  }
+}
+
+.h-underline {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    background-color: $primary;
+    border-radius: 12px;
+    display: block;
+    height: 4px;
+    margin-top: 1.2rem;
+    width: 100px;
+  }
+}
+
+.underline {
+  &::after {
+    content: "";
+    background-color: $secondary;
+    border-radius: 12px;
+    display: block;
+    height: 4px;
+    margin-top: 1rem;
+    width: 100px;
+  }
+}
+
+.container {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+
+  @media (min-width: $mobileLX) {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+
+  @media (min-width: $tablet) {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+  }
+
+  @media (min-width: $laptop) {
+    padding-right: 8rem !important;
+    padding-left: 8rem !important;
+  }
+
+  @media (min-width: $laptopM) {
+    padding-right: 10rem !important;
+    padding-left: 10rem !important;
+  }
+}
+
+.grain-texture {
+  filter: url(#grain-texture);
+}
