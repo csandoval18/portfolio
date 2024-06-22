@@ -194,15 +194,6 @@
     format("truetype");
 }
 
-* {
-  // font-family: "Samsung Sharp Sans Bold" !important;
-  // font-family: "Misegar";
-  // font-family: "Mangolia";
-  // font-family: "Grotley";
-  // font-family: "GladioraDemo";
-  // font-size: 1.4rem !important;
-}
-
 h1,
 h2,
 h3,
@@ -215,9 +206,11 @@ h6 {
 a,
 p,
 div,
-span li,
+span,
+li,
 ul {
   font-family: "Samsung Sharp Sans Regular";
+  color: $fg;
 }
 
 p {

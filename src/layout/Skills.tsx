@@ -1,19 +1,58 @@
 import React from "react"
 import Carousel from "../components/Carousel"
+import { GiCyberEye } from "react-icons/gi"
 
 interface SkillsProps {}
 
-let skills = {
-  languages = {
-    cagegory: "",
+const techStack = {
+  Languages: {
+    header: "Languages",
+    items: {
+      JavaScript: 80,
+      TypeScript: 75,
+      Python: 88,
+      "C++": 75,
+      "C#": 40,
+      PHP: 40,
+    },
+  },
+  FrameworksLibraries: {
+    header: "Frameworks",
+    items: {
+      React: 85,
+      "Vue.js": 50,
+      Angular: 30,
+      Express: 70,
+      ".Net": 40,
+      Django: 20,
+    },
+  },
+  Databases: {
+    header: "Databases",
+    items: {
+      SQL: 65,
+      PostgreSQL: 65,
+      MongoDB: 35,
+      Redis: 35,
+    },
+  },
+  DevOps: {
+    header: "Dev/Ops",
+    items: {
+      Docker: 50,
+      Git: 70,
+      AWS: 50,
+    },
   },
 }
 
 const Skills: React.FC<SkillsProps> = () => {
   return (
     <section className="Skills">
-      <h2 className="center-heading">Skills</h2>
-
+      <div className="category-header">
+        <GiCyberEye />
+        <h2>Skills</h2>
+      </div>
       <section className="intro container">
         <div className="card">
           <h3>Software Engineer</h3>
@@ -30,18 +69,27 @@ const Skills: React.FC<SkillsProps> = () => {
       </section>
 
       <Carousel />
-
-      <div className="skill-wrapper">
-        <h4>Languages</h4>
-      </div>
-      <div className="skill-wrapper">
-        <h4>Frameworks/Libraries</h4>
-      </div>
-      <div className="skill-wrapper">
-        <h4>Databases</h4>
-      </div>
-      <div className="skill-wrapper">
-        <h4>Dev/Ops</h4>
+      <div className="center-wrapper">
+        <div className="skill-wrapper container">
+          {Object.entries(techStack).map(([category, data]) => (
+            <div key={category} className="skill-block">
+              <h4>{data.header}</h4>
+              <ul className="list-wrapper">
+                {Object.entries(data.items).map(([item, skill_wt]) => (
+                  <li key={item}>
+                    {item} : {skill_wt}{" "}
+                    <div className="skill-bar">
+                      <div
+                        className="skill-fill"
+                        style={{ width: skill_wt + "%" }}
+                      ></div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

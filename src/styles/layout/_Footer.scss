@@ -1,9 +1,114 @@
-footer {
-  background-color: $obg;
-  filter: url(#grain-texture);
-  height: 300px;
+main {
+  display: flex;
+  flex-direction: column;
+}
 
-  .logo {
-    color: $fg;
+.Footer {
+  background-color: $b;
+  display: flex;
+  flex-direction: column;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  ul {
+    color: $w;
+  }
+
+  .top-footer {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 0;
+
+    a {
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $contrast;
+      }
+    }
+
+    .logo {
+      align-items: center;
+      display: flex;
+      font-family: "AhganiryaFont";
+      font-size: 1.8rem;
+      gap: 10px;
+      margin-bottom: 20px;
+      transition: scale 0.3s ease-in;
+      width: fit-content;
+
+      svg {
+        font-size: 2rem;
+      }
+    }
+
+    .block {
+      align-items: start;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-bottom: 20px;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+.Footer .block {
+  h5 {
+    text-align: center;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  svg {
+    color: $primary;
+    font-size: 2rem;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $contrast;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .Footer .top-footer {
+    display: flex;
+    flex-direction: row;
+    // gap: 6rem;
+    justify-content: space-evenly;
+
+    .block {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      justify-content: start;
+
+      p {
+        text-align: left;
+      }
+    }
   }
 }

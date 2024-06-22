@@ -8,6 +8,11 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+
+  .card {
+    background-color: $w;
+    transition: 0.3s color ease-in, background-color 0.3s ease-in;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -15,18 +20,106 @@
     text-align: center;
     padding-bottom: 8rem;
 
+    .card:hover {
+      background-color: $fg;
+
+      h3 {
+        color: $secondary;
+      }
+      p {
+        color: $bg;
+      }
+    }
+
     h2 {
       margin-bottom: 70px;
     }
 
     .intro-p {
-      color: lighten($fg, 25);
+      color: lighten($fg, 15);
       // font-family: "Grotley Regular";
       // font-family: "RoleModelFont";
       font-family: "Archimoto Font Black";
       font-size: 1.2rem;
       font-weight: 600;
       line-height: 3.2rem;
+    }
+  }
+
+  .center-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .skill-wrapper {
+    display: grid;
+    // filter: url(#grain-texture);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+    justify-content: center;
+    padding: 8rem 0;
+    row-gap: 4rem;
+
+    .skill-block {
+      max-width: 500px;
+    }
+
+    h4,
+    ul li {
+      font-family: "Archimoto Font Black";
+    }
+
+    h4 {
+      margin-bottom: 50px;
+    }
+
+    ul {
+      // padding-left: 18px;
+      padding-left: 0px;
+      max-width: 600px;
+
+      li {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 30px;
+      }
+    }
+
+    .skill-bar {
+      background-color: $b; /* Replace with your desired background color */
+      border-radius: 0.2rem;
+      height: 25px;
+      position: relative;
+      width: 180px; /* Default width of the skill bar */
+
+      .skill-fill {
+        content: "";
+        background-color: $primary; /* Replace with your desired fill color */
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 0%; /* Initial width of the filled portion */
+        transition: width 0.3s ease-in-out; /* Smooth transition for width changes */
+      }
+    }
+  }
+
+  .category-header {
+    align-items: center;
+    background-color: $contrast;
+    display: flex;
+    padding-top: 1rem;
+    text-align: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 6rem;
+
+    svg {
+      font-size: 3.2rem;
+
+      margin-bottom: 1rem;
     }
   }
 }
