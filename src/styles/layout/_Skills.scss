@@ -46,12 +46,24 @@
     }
   }
 
+  .center-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
   .skill-wrapper {
     display: grid;
+    // filter: url(#grain-texture);
     grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
     justify-content: center;
-    margin: 8rem 0;
+    padding: 8rem 0;
     row-gap: 4rem;
+
+    .skill-block {
+      max-width: 500px;
+    }
 
     h4,
     ul li {
@@ -59,11 +71,13 @@
     }
 
     h4 {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     ul {
-      padding-left: 18px;
+      // padding-left: 18px;
+      padding-left: 0px;
+      max-width: 600px;
 
       li {
         display: grid;

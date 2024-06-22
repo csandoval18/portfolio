@@ -8,19 +8,20 @@ const techStack = {
   Languages: {
     header: "Languages",
     items: {
-      JavaScript: 88,
-      TypeScript: 80,
+      JavaScript: 80,
+      TypeScript: 75,
       Python: 88,
       "C++": 75,
-      PHP: 60,
+      "C#": 40,
+      PHP: 40,
     },
   },
   FrameworksLibraries: {
     header: "Frameworks",
     items: {
       React: 85,
-      "Vue.js": 80,
-      Angular: 75,
+      "Vue.js": 50,
+      Angular: 30,
       Express: 70,
       ".Net": 40,
       Django: 20,
@@ -29,22 +30,18 @@ const techStack = {
   Databases: {
     header: "Databases",
     items: {
-      MySQL: 90,
-      PostgreSQL: 85,
-      MongoDB: 80,
-      SQLite: 75,
-      Redis: 70,
+      SQL: 65,
+      PostgreSQL: 65,
+      MongoDB: 35,
+      Redis: 35,
     },
   },
   DevOps: {
     header: "Dev/Ops",
     items: {
-      Docker: 88,
-      Kubernetes: 85,
-      Jenkins: 80,
-      "GitHub Actions": 75,
-      AWS: 90,
-      Azure: 85,
+      Docker: 50,
+      Git: 70,
+      AWS: 50,
     },
   },
 }
@@ -72,26 +69,27 @@ const Skills: React.FC<SkillsProps> = () => {
       </section>
 
       <Carousel />
-
-      <div className="skill-wrapper container">
-        {Object.entries(techStack).map(([category, data]) => (
-          <div key={category}>
-            <h4>{data.header}</h4>
-            <ul>
-              {Object.entries(data.items).map(([item, skill_wt]) => (
-                <li key={item}>
-                  {item} : {skill_wt}{" "}
-                  <div className="skill-bar">
-                    <div
-                      className="skill-fill"
-                      style={{ width: skill_wt + "%" }}
-                    ></div>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      <div className="center-wrapper">
+        <div className="skill-wrapper container">
+          {Object.entries(techStack).map(([category, data]) => (
+            <div key={category} className="skill-block">
+              <h4>{data.header}</h4>
+              <ul className="list-wrapper">
+                {Object.entries(data.items).map(([item, skill_wt]) => (
+                  <li key={item}>
+                    {item} : {skill_wt}{" "}
+                    <div className="skill-bar">
+                      <div
+                        className="skill-fill"
+                        style={{ width: skill_wt + "%" }}
+                      ></div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
