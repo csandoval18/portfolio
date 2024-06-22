@@ -8,6 +8,11 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+
+  .card {
+    background-color: $w;
+    transition: 0.3s color ease-in, background-color 0.3s ease-in;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -15,12 +20,23 @@
     text-align: center;
     padding-bottom: 8rem;
 
+    .card:hover {
+      background-color: $fg;
+
+      h3 {
+        color: $secondary;
+      }
+      p {
+        color: $bg;
+      }
+    }
+
     h2 {
       margin-bottom: 70px;
     }
 
     .intro-p {
-      color: lighten($fg, 25);
+      color: lighten($fg, 15);
       // font-family: "Grotley Regular";
       // font-family: "RoleModelFont";
       font-family: "Archimoto Font Black";
@@ -31,15 +47,42 @@
   }
 
   .skill-wrapper {
-    align-items: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    margin: 8rem 0;
+    row-gap: 4rem;
+
+    h4,
+    ul li {
+      font-family: "Archimoto Font Black";
+    }
+
+    h4 {
+      margin-bottom: 40px;
+    }
+
+    ul {
+      padding-left: 18px;
+
+      li {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 30px;
+      }
+    }
+
+    .skill-bar {
+      background-color: $b;
+      border-radius: 0.2rem;
+      height: 25px;
+      width: 180px;
+    }
   }
 
   .category-header {
     align-items: center;
-    background-color: $secondary;
+    background-color: $contrast;
     display: flex;
     padding-top: 1rem;
     text-align: center;

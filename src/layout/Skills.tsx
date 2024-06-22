@@ -7,26 +7,45 @@ interface SkillsProps {}
 const techStack = {
   Languages: {
     header: "Languages",
-    items: ["JavaScript", "TypeScript", "Python", "Java", "C++", "Ruby"],
+    items: {
+      JavaScript: 88,
+      TypeScript: 80,
+      Python: 88,
+      "C++": 75,
+      PHP: 60,
+    },
   },
   FrameworksLibraries: {
-    header: "Frameworks/Libraries",
-    items: ["React", "Vue.js", "Angular", "Express", "Django", "Flask"],
+    header: "Frameworks",
+    items: {
+      React: 85,
+      "Vue.js": 80,
+      Angular: 75,
+      Express: 70,
+      ".Net": 40,
+      Django: 20,
+    },
   },
   Databases: {
     header: "Databases",
-    items: ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "Redis"],
+    items: {
+      MySQL: 90,
+      PostgreSQL: 85,
+      MongoDB: 80,
+      SQLite: 75,
+      Redis: 70,
+    },
   },
   DevOps: {
     header: "Dev/Ops",
-    items: [
-      "Docker",
-      "Kubernetes",
-      "Jenkins",
-      "GitHub Actions",
-      "AWS",
-      "Azure",
-    ],
+    items: {
+      Docker: 88,
+      Kubernetes: 85,
+      Jenkins: 80,
+      "GitHub Actions": 75,
+      AWS: 90,
+      Azure: 85,
+    },
   },
 }
 
@@ -59,8 +78,10 @@ const Skills: React.FC<SkillsProps> = () => {
           <div key={category}>
             <h4>{data.header}</h4>
             <ul>
-              {data.items.map((item, index) => (
-                <li key={index}>{item}</li>
+              {Object.entries(data.items).map(([item, skill_wt]) => (
+                <li key={item}>
+                  {item} : {skill_wt} <div className="skill-bar"></div>
+                </li>
               ))}
             </ul>
           </div>

@@ -1,11 +1,15 @@
 import React from "react"
+import { PiGraduationCapFill } from "react-icons/pi"
 
 interface EducationProps {}
 
 const Education: React.FC<EducationProps> = () => {
   return (
     <section className="Education">
-      <h2 className="center-heading">Education</h2>
+      <div className="category-header">
+        <PiGraduationCapFill />
+        <h2>Education</h2>
+      </div>
     </section>
   )
 }
