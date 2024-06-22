@@ -11,7 +11,7 @@ const techStack = {
       JavaScript: 80,
       TypeScript: 75,
       Python: 88,
-      "C++": 75,
+      "C++": 60,
       "C#": 40,
       PHP: 40,
     },
@@ -22,9 +22,17 @@ const techStack = {
       React: 85,
       "Vue.js": 50,
       Angular: 30,
-      Express: 70,
+      Express: 60,
       ".Net": 40,
       Django: 20,
+    },
+  },
+  CMS: {
+    header: "CMS",
+    items: {
+      WordPress: 80,
+      NopCommerce: 70,
+      DotNetNuke: 70,
     },
   },
   Databases: {
@@ -77,7 +85,7 @@ const Skills: React.FC<SkillsProps> = () => {
               <ul className="list-wrapper">
                 {Object.entries(data.items).map(([item, skill_wt]) => (
                   <li key={item}>
-                    {item} : {skill_wt}{" "}
+                    {item} : {skill_wt}
                     <div className="skill-bar">
                       <div
                         className="skill-fill"
