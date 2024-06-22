@@ -1,5 +1,5 @@
 import Footer from "./layout/Footer"
-import Home from "./layout/Home"
+import Home from "./layout/Hero"
 import Nav from "./layout/Nav"
 
 function App() {

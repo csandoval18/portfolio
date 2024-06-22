@@ -15,6 +15,7 @@ import {
   SiAdobephotoshop,
   SiCplusplus,
   SiJavascript,
+  SiRedis,
   SiSass,
   SiTypescript,
 } from "react-icons/si"
@@ -40,6 +41,7 @@ const Carousel: React.FC<CarouselProps> = () => {
           <SiCplusplus className="icon" />
           <AiOutlineConsoleSql className="icon" />
           <BiLogoPostgresql className="icon" />
+          <SiRedis className="icon" />
           <SiAdobephotoshop className="icon" />
           <SiAdobeillustrator className="icon" />
           <FaNode className="icon" />

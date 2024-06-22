@@ -41,6 +41,7 @@ main {
       font-family: "AhganiryaFont";
       font-size: 1.8rem;
       gap: 10px;
+      letter-spacing: 0.3rem;
       margin-bottom: 20px;
       transition: scale 0.3s ease-in;
       width: fit-content;
@@ -99,7 +100,7 @@ main {
     justify-content: space-evenly;
 
     .block {
-      align-items: center;
+      // align-items: center;
       display: flex;
       flex-direction: column;
       margin-top: 10px;

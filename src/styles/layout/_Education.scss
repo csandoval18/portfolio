@@ -1,0 +1,31 @@
+.Education {
+  .education-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 8rem;
+
+    h3 {
+      align-items: center;
+      display: flex;
+      gap: 0.8rem;
+      justify-content: center;
+
+      & > span {
+        color: $secondary;
+        font-family: "Samsung Sharp Sans Bold";
+      }
+    }
+
+    p {
+      font-family: "Archimoto Font Black";
+      font-size: 1.1rem;
+    }
+
+    ul,
+    li {
+      font-family: "Archimoto Font Black";
+    }
+  }
+}
