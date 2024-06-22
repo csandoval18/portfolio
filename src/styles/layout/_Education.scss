@@ -6,12 +6,27 @@
     justify-content: center;
     padding-bottom: 8rem;
 
-    h3,
-    h4 {
+    .university-header {
+      align-items: center;
+      // background-color: blue;
+      display: flex;
+      flex-direction: column;
+
+      &::after {
+        background-color: $fg;
+        content: "";
+        display: block;
+        height: 4px;
+        margin-bottom: 2rem;
+        width: 100px;
+      }
+    }
+
+    h3 {
       align-items: center;
       display: flex;
       gap: 0.8rem;
-      justify-content: center;
+      justify-content: right;
 
       & > span {
         color: $secondary;
@@ -19,14 +34,10 @@
       }
     }
 
-    h3 {
-      &::after {
-        content: "";
-      }
-    }
-
     h4 {
       font-family: "Archimoto Font Black" !important;
+      margin-top: 3rem;
+      margin-bottom: 2.5rem;
     }
 
     p {
@@ -37,6 +48,14 @@
     ul,
     li {
       font-family: "Archimoto Font Black";
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 1.2rem;
     }
   }
 }
