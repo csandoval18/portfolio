@@ -80,7 +80,13 @@ const Skills: React.FC<SkillsProps> = () => {
             <ul>
               {Object.entries(data.items).map(([item, skill_wt]) => (
                 <li key={item}>
-                  {item} : {skill_wt} <div className="skill-bar"></div>
+                  {item} : {skill_wt}{" "}
+                  <div className="skill-bar">
+                    <div
+                      className="skill-fill"
+                      style={{ width: skill_wt + "%" }}
+                    ></div>
+                  </div>
                 </li>
               ))}
             </ul>

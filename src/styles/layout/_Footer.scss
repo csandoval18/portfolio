@@ -95,7 +95,8 @@ main {
   .Footer .top-footer {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    // gap: 6rem;
+    justify-content: space-evenly;
 
     .block {
       align-items: center;

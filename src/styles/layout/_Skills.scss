@@ -73,10 +73,22 @@
     }
 
     .skill-bar {
-      background-color: $b;
+      background-color: $b; /* Replace with your desired background color */
       border-radius: 0.2rem;
       height: 25px;
-      width: 180px;
+      position: relative;
+      width: 180px; /* Default width of the skill bar */
+
+      .skill-fill {
+        content: "";
+        background-color: $primary; /* Replace with your desired fill color */
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 0%; /* Initial width of the filled portion */
+        transition: width 0.3s ease-in-out; /* Smooth transition for width changes */
+      }
     }
   }
 
