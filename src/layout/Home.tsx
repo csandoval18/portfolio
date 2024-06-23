@@ -15,7 +15,7 @@ const Home: React.FC<HomeProps> = () => {
           <div className="title">
             <div className="header-wrapper">
               <h1>
-                <span className="first-name">Chirstian</span>{" "}
+                <span className="first-name">Christian</span>{" "}
                 <span className="first-last-name">Alvites</span>{" "}
                 <span className="second-last-name">Sandoval</span>
               </h1>

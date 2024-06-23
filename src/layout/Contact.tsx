@@ -76,7 +76,7 @@ const Contact: React.FC<ContactProps> = () => {
             //   }
             // }}
             >
-              <p>{banner}</p>
+              {/* <p>{banner}</p> */}
               <label htmlFor="name">Name</label>
               <input
                 type="text"
@@ -100,13 +100,13 @@ const Contact: React.FC<ContactProps> = () => {
                 <button className="submit-btn" type="submit">
                   Send
                 </button>
-                {bool ? (
-                  <b className="load">
+                {/* {bool ? (
+                  <b classname="load">
                     {/* <img src={load} alt="unable to load" /> */}
-                  </b>
+                {/* </b>
                 ) : (
                   ""
-                )}
+                )} */}
               </div>
             </form>
           </div>
