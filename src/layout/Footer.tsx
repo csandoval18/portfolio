@@ -1,7 +1,7 @@
 import React from "react"
 import { AiFillGithub } from "react-icons/ai"
 import { BiCopyright } from "react-icons/bi"
-import { FaFacebookSquare, FaPiedPiper } from "react-icons/fa"
+import { FaPiedPiper } from "react-icons/fa"
 import { GrInstagram } from "react-icons/gr"
 
 interface FooterProps {}

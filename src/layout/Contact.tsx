@@ -15,8 +15,8 @@ const Contact: React.FC<ContactProps> = () => {
   const [name, setName] = useState<string>("")
   const [email, setEmail] = useState<string>("")
   const [message, setMessage] = useState<string>("")
-  const [banner, setBanner] = useState<string>("")
-  const [bool, setBool] = useState<Boolean>(false)
+  // const [banner, setBanner] = useState<string>("")
+  // const [bool, setBool] = useState<Boolean>(false)
 
   return (
     <section className="Contact">
