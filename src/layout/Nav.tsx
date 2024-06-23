@@ -29,10 +29,10 @@ const Navbar: React.FC<NavbarProps> = () => {
             <a href="#">Education</a>
           </li>
           <li>
-            <a href="#">Resume</a>
+            <a href="#">Experience</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#">Resume</a>
           </li>
         </ul>
       </div>

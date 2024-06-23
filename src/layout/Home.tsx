@@ -2,6 +2,8 @@ import React from "react"
 import Education from "./Education"
 import Skills from "./Skills"
 import Contact from "./Contact"
+import Resume from "./Resume"
+import Experience from "./Experience"
 
 interface HomeProps {}
 
@@ -33,6 +35,8 @@ const Home: React.FC<HomeProps> = () => {
 
       <Skills />
       <Education />
+      <Experience />
+      <Resume />
       <Contact />
     </section>
   )

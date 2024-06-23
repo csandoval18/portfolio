@@ -22,7 +22,6 @@ const Contact: React.FC<ContactProps> = () => {
     <section className="Contact">
       <div className="category-header">
         <GrContactInfo />
-
         <h2>Contact</h2>
       </div>
       <div className="main-container fade-in">

@@ -19,10 +19,10 @@ const techStack = {
   FrameworksLibraries: {
     header: "Frameworks",
     items: {
-      React: 85,
-      "Vue.js": 50,
-      Angular: 10,
+      React: 80,
+      "Vue.js": 35,
       Express: 60,
+      Laravel: 40,
       ".Net": 35,
       Django: 20,
     },
@@ -50,13 +50,15 @@ const techStack = {
       Docker: 50,
       Git: 70,
       AWS: 50,
+      "Linux (Ubuntu)": 50,
+      WSL2: 40,
     },
   },
   Design: {
     header: "Design",
     items: {
-      "Adobe Photoshop": 65,
-      "Adobe Illustrator": 65,
+      Photoshop: 65,
+      Illustrator: 65,
       Figma: 40,
     },
   },
