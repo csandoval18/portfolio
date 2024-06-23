@@ -22,6 +22,12 @@
       }
     }
 
+    .courses {
+      display: flex;
+      gap: 3rem;
+      margin-top: 6rem;
+    }
+
     h3 {
       align-items: center;
       display: flex;
@@ -52,10 +58,15 @@
 
     ul {
       padding-left: 20px;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(5, 1fr);
+      // grid-template-rows: 1fr 1fr;
     }
 
     li {
       margin-bottom: 1.2rem;
+      max-width: 200px;
     }
   }
 }

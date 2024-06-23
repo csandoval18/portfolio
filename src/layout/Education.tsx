@@ -22,7 +22,7 @@ const Education: React.FC<EducationProps> = () => {
         <p>GPA: 3.4</p>
 
         <div className="courses">
-          <h4>Relevant Courses</h4>
+          <h4>Relevant Courses:</h4>
           <ul>
             <li>Data Structures</li>
             <li> Theory of Algorithms</li>

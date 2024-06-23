@@ -35,21 +35,21 @@ main {
       }
     }
 
-    // .logo {
-    //   align-items: center;
-    //   display: flex;
-    //   font-family: "AhganiryaFont";
-    //   font-size: 1.8rem;
-    //   gap: 10px;
-    //   letter-spacing: 0.3rem;
-    //   margin-bottom: 20px;
-    //   transition: scale 0.3s ease-in;
-    //   width: fit-content;
+    .logo {
+      align-items: center;
+      display: flex;
+      font-family: "AhganiryaFont";
+      font-size: 1.8rem;
+      gap: 10px;
+      letter-spacing: 0.3rem;
+      margin-bottom: 20px;
+      transition: scale 0.3s ease-in;
+      width: fit-content;
 
-    //   svg {
-    //     font-size: 2rem;
-    //   }
-    // }
+      svg {
+        font-size: 2rem;
+      }
+    }
 
     .block {
       align-items: start;
