@@ -19,7 +19,7 @@ const Education: React.FC<EducationProps> = () => {
           </h3>
         </div>
         <p>Major: Bachelors of Science - Computer Science</p>
-        <p>GPA: 3.4</p>
+        <p>GPA: 3.45</p>
 
         <div className="courses">
           <h4>Relevant Courses:</h4>

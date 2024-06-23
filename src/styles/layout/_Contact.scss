@@ -1,0 +1,149 @@
+.main-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 65px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.central-form {
+  background-color: $b;
+  border-radius: 15px;
+  max-width: 1100px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.title p {
+  color: white;
+  letter-spacing: 0.1rem;
+  margin-left: 17px;
+  font-size: 30px;
+}
+
+.back-form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+}
+
+.back-form .img-back {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.back-form .img-back img {
+  width: 100%;
+  border-radius: 15px;
+}
+.central-form form {
+  background-color: $bg;
+  border-radius: 15px;
+  color: $b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -52px;
+  padding: 15px;
+  width: auto;
+}
+
+form p {
+  text-align: center;
+  margin-bottom: 10px;
+  color: $fg;
+  letter-spacing: 0.3rem;
+  font-family: "Poppins Bold";
+}
+
+form label {
+  color: $fg;
+  margin-bottom: 10px;
+  letter-spacing: 0.2rem;
+}
+
+form textarea {
+  height: 120px;
+}
+
+form input,
+textarea {
+  background-color: rgba($fg, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  color: $fg;
+  outline: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 22px;
+  transition: 0.1s;
+}
+
+textarea:focus,
+input:focus {
+  border: 2px solid $contrast;
+}
+
+.submit-btn {
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  align-items: center;
+  background-color: $fg;
+  border-radius: 19px;
+  border: none;
+  color: $bg;
+  font-size: 18px;
+  height: 44px;
+  justify-content: center;
+  margin-top: 15px;
+  outline: none;
+  width: 160px;
+
+  &:focus {
+    border: solid 3px $primary;
+  }
+
+  &:active {
+    transform: translateY(3px);
+  }
+
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .central-form {
+    width: 98%;
+  }
+  .back-form {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    max-width: 1100px;
+  }
+
+  form {
+    flex: 0.9;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    padding-bottom: 0;
+  }
+
+  .central-form {
+    max-width: 85%;
+  }
+
+  .title p {
+    font-size: 25px;
+  }
+}

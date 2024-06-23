@@ -10,9 +10,9 @@ const techStack = {
     items: {
       JavaScript: 80,
       TypeScript: 75,
-      Python: 88,
-      "C++": 60,
-      "C#": 40,
+      Python: 85,
+      "C++": 65,
+      "C#": 35,
       PHP: 40,
     },
   },
@@ -21,16 +21,16 @@ const techStack = {
     items: {
       React: 85,
       "Vue.js": 50,
-      Angular: 30,
+      Angular: 10,
       Express: 60,
-      ".Net": 40,
+      ".Net": 35,
       Django: 20,
     },
   },
   CMS: {
     header: "CMS",
     items: {
-      WordPress: 80,
+      WordPress: 85,
       NopCommerce: 70,
       DotNetNuke: 70,
     },
@@ -38,9 +38,9 @@ const techStack = {
   Databases: {
     header: "Databases",
     items: {
-      SQL: 65,
-      PostgreSQL: 65,
-      MongoDB: 35,
+      SQL: 70,
+      PostgreSQL: 70,
+      MongoDB: 40,
       Redis: 35,
     },
   },
@@ -50,6 +50,14 @@ const techStack = {
       Docker: 50,
       Git: 70,
       AWS: 50,
+    },
+  },
+  Design: {
+    header: "Design",
+    items: {
+      "Adobe Photoshop": 65,
+      "Adobe Illustrator": 65,
+      Figma: 40,
     },
   },
 }

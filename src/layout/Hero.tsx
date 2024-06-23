@@ -19,7 +19,7 @@ const Home: React.FC<HomeProps> = () => {
               </h1>
               <div className="hero-btns-layout">
                 <a className="btn btn-primary" href="/contact">
-                  Learn More
+                  Get Resume
                 </a>
                 <a className="btn btn-border" href="/contact">
                   Contact Info

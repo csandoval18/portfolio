@@ -19,6 +19,48 @@
   }
 }
 
+.skill-wrapper {
+  h4,
+  ul li {
+    font-family: "Archimoto Font Black";
+  }
+
+  h4 {
+    margin-bottom: 50px;
+  }
+
+  ul {
+    // padding-left: 18px;
+    padding-left: 0px;
+    max-width: 600px;
+
+    li {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 30px;
+    }
+  }
+
+  .skill-bar {
+    background-color: $b; /* Replace with your desired background color */
+    border-radius: 0.2rem;
+    height: 25px;
+    position: relative;
+    width: 180px; /* Default width of the skill bar */
+
+    .skill-fill {
+      content: "";
+      background-color: $primary; /* Replace with your desired fill color */
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 0%; /* Initial width of the filled portion */
+      transition: width 0.3s ease-in-out; /* Smooth transition for width changes */
+    }
+  }
+}
+
 @media (min-width: $tablet) {
   .intro {
     text-align: center;
@@ -58,7 +100,6 @@
 
   .skill-wrapper {
     display: grid;
-    // filter: url(#grain-texture);
     grid-template-columns: repeat(2, 1fr);
     gap: 10rem;
     justify-content: center;
@@ -67,46 +108,6 @@
 
     .skill-block {
       max-width: 500px;
-    }
-
-    h4,
-    ul li {
-      font-family: "Archimoto Font Black";
-    }
-
-    h4 {
-      margin-bottom: 50px;
-    }
-
-    ul {
-      // padding-left: 18px;
-      padding-left: 0px;
-      max-width: 600px;
-
-      li {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 30px;
-      }
-    }
-
-    .skill-bar {
-      background-color: $b; /* Replace with your desired background color */
-      border-radius: 0.2rem;
-      height: 25px;
-      position: relative;
-      width: 180px; /* Default width of the skill bar */
-
-      .skill-fill {
-        content: "";
-        background-color: $primary; /* Replace with your desired fill color */
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 0%; /* Initial width of the filled portion */
-        transition: width 0.3s ease-in-out; /* Smooth transition for width changes */
-      }
     }
   }
 }

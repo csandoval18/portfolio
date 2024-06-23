@@ -1,4 +1,5 @@
 import React from "react"
+import { AiFillGithub } from "react-icons/ai"
 import { BiCopyright } from "react-icons/bi"
 import { FaFacebookSquare, FaPiedPiper } from "react-icons/fa"
 import { GrInstagram } from "react-icons/gr"
@@ -31,7 +32,7 @@ const Footer: React.FC<FooterProps> = () => {
           <h5>Follow Me</h5>
           <div className="social-icons">
             <a href="/">
-              <FaFacebookSquare />
+              <AiFillGithub />
             </a>
             <a href="#">
               <GrInstagram />
