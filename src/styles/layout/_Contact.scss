@@ -48,7 +48,7 @@ body {
 }
 
 .form-group label {
-  color: var(--white);
+  color: $w;
   font-family: "Archimoto Font Black";
   font-size: 1.3rem;
   margin-bottom: 10px;
@@ -56,10 +56,10 @@ body {
 
 .form-group input,
 .form-group textarea {
-  background-color: $primary;
+  background-color: $w;
   border: none;
   border-radius: 10px;
-  color: $w;
+  color: $b;
   font-family: "Samsung Sharp Sans Regular";
   font-size: 1.2rem;
   padding: 10px;
@@ -81,21 +81,25 @@ body {
 }
 
 .submit-btn {
-  background-color: $contrast;
+  background-color: transparent;
   border: 4px solid $contrast;
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.15);
-  color: $fg;
+  color: $bg;
+  cursor: pointer;
   // font-family: "Samsung Sharp Sans Regular";
   font-family: "Archimoto Font Black";
   font-size: 1.2rem !important;
+  margin-top: 5rem;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
   padding: 1.5rem 2rem;
   position: relative;
+  z-index: 100;
 
   &::after {
-    background-color: $secondary;
+    background-color: $contrast;
     transition: width 0.3s ease-in;
     content: "";
+    display: block;
     height: 100%;
     left: 0;
     position: absolute;
