@@ -15,9 +15,7 @@
 
     .design {
       background-image: url(/images/hero-design1.png);
-      background-position: center center;
       flex: 1;
-      min-height: calc(100vh + 40px);
       width: 100%;
 
       img {
@@ -34,11 +32,6 @@
       display: flex;
       text-align: center;
       justify-content: center;
-    }
-
-    @media (min-width: $tablet) {
-      flex-direction: row;
-      justify-content: space-between;
     }
   }
 
@@ -97,9 +90,12 @@
   margin-top: 40px;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $laptopM) {
   .Hero {
     .hero-layout {
+      flex-direction: row;
+      justify-content: space-between;
+
       .title .header-wrapper h1 {
         align-items: center;
         font-size: 8rem;
@@ -111,7 +107,18 @@
       }
 
       .design {
+        background-position: center center;
+        flex: 1;
+        min-height: calc(100vh + 40px);
         width: 100%;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+          width: 100%;
+          rotate: 270deg;
+          scale: 0.45;
+        }
       }
     }
   }
@@ -119,22 +126,22 @@
 
 @keyframes color-change {
   0% {
-    color: $primary; /* Start with primary color */
+    color: $primary;
   }
 
   25% {
-    color: $secondary; /* Change to secondary color 1 */
+    color: $secondary;
   }
 
   50% {
-    color: $contrast; /* Change to secondary color 2 */
+    color: $contrast;
   }
 
   75% {
-    color: $obg; /* Change to secondary color 3 */
+    color: $obg;
   }
 
   100% {
-    color: $primary; /* Return to primary color */
+    color: $primary;
   }
 }
