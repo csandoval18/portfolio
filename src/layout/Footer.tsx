@@ -3,6 +3,7 @@ import { AiFillGithub } from "react-icons/ai"
 import { BiCopyright } from "react-icons/bi"
 import { FaPiedPiper } from "react-icons/fa"
 import { GrInstagram } from "react-icons/gr"
+import { Link } from "react-scroll"
 
 interface FooterProps {}
 
@@ -10,10 +11,10 @@ const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className="Footer container" id="Footer">
       <div className="top-footer">
-        <a href="/" className="logo">
+        <Link smooth={true} to="Hero" className="logo">
           <FaPiedPiper />
           CAS
-        </a>
+        </Link>
 
         <div className="block">
           <h5>Contact</h5>
@@ -31,7 +32,7 @@ const Footer: React.FC<FooterProps> = () => {
         <div className="block">
           <h5>Follow Me</h5>
           <div className="social-icons">
-            <a href="/">
+            <a href="https://github.com/csandoval18">
               <AiFillGithub />
             </a>
             <a href="#">

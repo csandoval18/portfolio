@@ -1,23 +1,21 @@
 .Skills {
-  padding-top: 8rem;
-}
+  .intro {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 
-.intro {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+    .intro-p {
+      color: $fg;
+      font-family: "Archimoto Font Medium";
+    }
 
-  .intro-p {
-    color: $fg;
-    font-family: "Archimoto Font Medium";
-  }
-
-  .card {
-    background-color: $w;
-    margin-top: 6rem;
-    transition: 0.3s color ease-in, background-color 0.3s ease-in;
+    .card {
+      background-color: $w;
+      margin-top: 6rem;
+      transition: 0.3s color ease-in, background-color 0.3s ease-in;
+    }
   }
 }
 
@@ -63,6 +61,10 @@
 }
 
 @media (min-width: $tablet) {
+  .Skills {
+    padding-top: 8rem;
+  }
+
   .intro {
     text-align: center;
     padding-bottom: 8rem;
