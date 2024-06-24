@@ -11,7 +11,7 @@ const Resume: React.FC<ResumeProps> = () => {
         <MdPictureAsPdf />
         <h2>Resume</h2>
       </div>
-      <div className="resume-content">
+      <div className="resume-content container">
         <img src={resumePng} alt="" />
 
         <span>Grab a copy 😊</span>

@@ -35,8 +35,8 @@
   .icon {
     background-color: $b;
     color: $w !important;
-    font-size: 4rem; // Smaller font size for mobile devices
-    margin: 20px 20px; // Smaller margin for mobile devices
+    font-size: 4rem;
+    margin: 20px 20px;
   }
 }
 
@@ -50,34 +50,30 @@
   }
 }
 
-// Media query for medium mobile screens and up
 @media (min-width: $mobileM) {
   .logos-slide .icon {
-    font-size: 5rem; // Adjust font size for larger mobile devices
-    margin: 25px 25px; // Adjust margin for larger mobile devices
+    font-size: 5rem;
+    margin: 25px 25px;
   }
 }
 
-// Media query for large mobile screens and up
 @media (min-width: $mobileL) {
   .logos-slide .icon {
-    font-size: 6rem; // Adjust font size for larger mobile devices
-    margin: 30px 30px; // Adjust margin for larger mobile devices
+    font-size: 6rem;
+    margin: 30px 30px;
   }
 }
 
-// Media query for tablets and up
 @media (min-width: $tablet) {
   .logos-slide .icon {
-    font-size: 7rem; // Adjust font size for tablet devices
-    margin: 35px 35px; // Adjust margin for tablet devices
+    font-size: 7rem;
+    margin: 35px 35px;
   }
 }
 
-// Media query for laptops and up
 @media (min-width: $laptop) {
   .logos-slide .icon {
-    font-size: 8rem; // Original font size for laptop devices
-    margin: 40px 40px; // Original margin for laptop devices
+    font-size: 8rem;
+    margin: 40px 40px;
   }
 }

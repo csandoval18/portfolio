@@ -4,21 +4,39 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 6rem;
-    margin-top: 6rem;
+    margin-block: 3rem;
 
     span {
-      font-family: "Archimoto Font Black" !important;
+      font-family: "Archimoto Font Black";
       font-size: 1.8rem;
-      margin-bottom: 2rem;
-      margin-top: 1.2rem;
+      margin-block: 1.5rem;
     }
 
     img {
       box-shadow: -40px -30px 0px 0px rgba($secondary, 1);
       border-radius: 1.2rem;
       border: 2px solid $b;
-      max-width: 500px;
+      max-width: 280px;
+    }
+  }
+
+  @media (min-width: $mobile) {
+    .resume-content {
+      margin-block: 6rem;
+
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet) {
+    .resume-content {
+      margin-block: 8rem;
+
+      img {
+        max-width: 500px;
+      }
     }
   }
 }
