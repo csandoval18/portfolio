@@ -14,7 +14,7 @@ const Contact = () => {
         <GrContactInfo />
         <h2>Contact</h2>
       </div>
-      <div className="main-container">
+      <div className="main-container container">
         <div className="central-form">
           <img className="svg-design" src={ContactSVG} />
           <h2>Contact</h2>

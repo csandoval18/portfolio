@@ -15,7 +15,8 @@
 
     .design {
       background-image: url(/images/hero-design1.png);
-      background-position: center center;
+      // background-position: center center;
+      display: none;
       flex: 1;
       width: 100%;
 
@@ -33,6 +34,14 @@
       display: flex;
       text-align: center;
       justify-content: center;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    .hero-layout {
+      .design {
+        display: block;
+      }
     }
   }
 

@@ -59,7 +59,7 @@
     border-radius: 0.2rem;
     height: 25px;
     position: relative;
-    width: 180px;
+    width: 135px;
 
     .skill-fill {
       content: "";
@@ -105,5 +105,9 @@
     .skill-block {
       max-width: 500px;
     }
+  }
+
+  .skill-bar {
+    width: 180px;
   }
 }
