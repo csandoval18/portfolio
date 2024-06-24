@@ -98,6 +98,16 @@
     padding-right: 10rem !important;
     padding-left: 10rem !important;
   }
+
+  @media (min-width: $desktop) {
+    padding-right: 25% !important;
+    padding-left: 25% !important;
+  }
+
+  @media (min-width: $desktopM) {
+    padding-right: 25% !important;
+    padding-left: 25% !important;
+  }
 }
 
 .grain-texture {
