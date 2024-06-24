@@ -10,7 +10,8 @@
   text-align: center;
 
   .intro-p {
-    font-family: "Archimoto Font Black";
+    color: $fg;
+    font-family: "Archimoto Font Medium";
   }
 
   .card {
@@ -23,7 +24,7 @@
 .skill-wrapper {
   h4,
   ul li {
-    font-family: "Archimoto Font Black";
+    font-family: "Archimoto Font Medium";
   }
 
   h4 {
@@ -31,7 +32,6 @@
   }
 
   ul {
-    // padding-left: 18px;
     padding-left: 0px;
     max-width: 600px;
 
@@ -43,21 +43,21 @@
   }
 
   .skill-bar {
-    background-color: $b; /* Replace with your desired background color */
+    background-color: $b;
     border-radius: 0.2rem;
     height: 25px;
     position: relative;
-    width: 180px; /* Default width of the skill bar */
+    width: 180px;
 
     .skill-fill {
       content: "";
-      background-color: $primary; /* Replace with your desired fill color */
+      background-color: $primary;
       height: 100%;
       left: 0;
       position: absolute;
       top: 0;
-      width: 0%; /* Initial width of the filled portion */
-      transition: width 0.3s ease-in-out; /* Smooth transition for width changes */
+      width: 0%;
+      transition: width 0.3s ease-in-out;
     }
   }
 }
@@ -67,28 +67,24 @@
     text-align: center;
     padding-bottom: 8rem;
 
+    h3 {
+      margin-bottom: 2rem;
+    }
+
     .card:hover {
       background-color: $fg;
 
       h3 {
         color: $secondary;
       }
+
       p {
         color: $bg;
       }
     }
 
-    h2 {
-      margin-bottom: 70px;
-    }
-
     .intro-p {
-      color: lighten($fg, 15);
-      // font-family: "Grotley Regular";
-      // font-family: "RoleModelFont";
-      font-family: "Archimoto Font Black";
       font-size: 1.2rem;
-      font-weight: 600;
       line-height: 3.2rem;
     }
   }

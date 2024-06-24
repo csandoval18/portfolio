@@ -73,7 +73,7 @@ const Skills: React.FC<SkillsProps> = () => {
       </div>
       <section className="intro container">
         <div className="card">
-          <h3>Software Engineer</h3>
+          <h3>Software Engineering</h3>
           <p className="intro-p">
             As a passionate and dedicated Software Engineer, I specialize in
             designing and developing high-quality software solutions. My journey
