@@ -82,12 +82,11 @@
 @media (min-width: 1195px) {
   .Education {
     .education-content {
-      padding-top: 8rem;
-      padding-bottom: 8rem;
+      padding-block: 8rem;
 
       .education-card {
         border-radius: 1.2rem;
-        padding: 4rem 6rem;
+        padding: 4rem 4rem;
       }
 
       .university-header {

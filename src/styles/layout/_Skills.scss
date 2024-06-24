@@ -111,3 +111,13 @@
     width: 180px;
   }
 }
+
+@media (min-width: $laptop) {
+  .skill-wrapper {
+    gap: 6.5rem;
+
+    ul li {
+      gap: 1rem;
+    }
+  }
+}
