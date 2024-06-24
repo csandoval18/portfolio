@@ -8,10 +8,11 @@
 .central-form {
   background-color: $b;
   border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   max-width: 800px;
+  overflow: hidden;
   padding: 30px;
   position: relative;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
   width: 100%;
   z-index: 10;
@@ -32,12 +33,39 @@
     left: 0;
     object-fit: cover;
     position: absolute;
-    top: calc(100% - 407px);
-    scale: 0.7;
+    top: 200px;
+    scale: 1.8;
     user-drag: none;
     -webkit-user-drag: none;
     -moz-user-drag: none;
     -ms-user-drag: none;
+  }
+}
+
+@media (min-width: $mobileL) {
+  .central-form {
+    img {
+      top: 80px;
+      scale: 1;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .central-form {
+    img {
+      top: -80px;
+      scale: 0.7;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .central-form {
+    img {
+      top: -80px;
+      scale: 0.8;
+    }
   }
 }
 
