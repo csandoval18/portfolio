@@ -1,149 +1,134 @@
+:root {
+  --primary: #96ebcf;
+  --secondary: #2d3047;
+  --accent1: #8a84e2;
+  --accent2: #84afe6;
+  --dark: #000100;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--secondary);
+  color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+
 .main-container {
-  align-items: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding-top: 65px;
-  padding-bottom: 60px;
+  padding: 50px 20px;
   width: 100%;
 }
 
 .central-form {
   background-color: $b;
   border-radius: 15px;
-  max-width: 1100px;
-  padding: 20px;
+  max-width: 800px;
+  padding: 30px;
   margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
-.title p {
-  color: white;
-  letter-spacing: 0.1rem;
-  margin-left: 17px;
-  font-size: 30px;
-}
-
-.back-form {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  justify-content: center;
-}
-
-.back-form .img-back {
-  width: 100%;
+.central-form h2 {
+  color: var(--primary);
   margin-bottom: 20px;
 }
 
-.back-form .img-back img {
-  width: 100%;
-  border-radius: 15px;
-}
-.central-form form {
-  background-color: $bg;
-  border-radius: 15px;
-  color: $b;
+.form-group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: -52px;
-  padding: 15px;
-  width: auto;
-}
-
-form p {
-  text-align: center;
-  margin-bottom: 10px;
-  color: $fg;
-  letter-spacing: 0.3rem;
-  font-family: "Poppins Bold";
-}
-
-form label {
-  color: $fg;
-  margin-bottom: 10px;
-  letter-spacing: 0.2rem;
-}
-
-form textarea {
-  height: 120px;
-}
-
-form input,
-textarea {
-  background-color: rgba($fg, 0.1);
-  border: 2px solid rgba(0, 0, 0, 0);
-  border-radius: 10px;
-  color: $fg;
-  outline: none;
-  font-size: 1.1rem;
-  padding: 0.5rem 1rem;
-  margin-bottom: 22px;
-  transition: 0.1s;
-}
-
-textarea:focus,
-input:focus {
-  border: 2px solid $contrast;
-}
-
-.submit-btn {
-  margin-bottom: 15px;
-}
-
-.submit-btn {
   align-items: center;
-  background-color: $fg;
-  border-radius: 19px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group label {
+  color: var(--white);
+  font-family: "Archimoto Font Black";
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: $primary;
   border: none;
-  color: $bg;
-  font-size: 18px;
-  height: 44px;
-  justify-content: center;
-  margin-top: 15px;
+  border-radius: 10px;
+  color: $w;
+  font-family: "Samsung Sharp Sans Regular";
+  font-size: 1.2rem;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background-color: $secondary;
   outline: none;
-  width: 160px;
+}
 
-  &:focus {
-    border: solid 3px $primary;
-  }
+.form-group textarea {
+  height: 150px;
+  resize: none;
+}
 
-  &:active {
-    transform: translateY(3px);
+.submit-btn {
+  background-color: $contrast;
+  border: 4px solid $contrast;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.15);
+  color: $fg;
+  // font-family: "Samsung Sharp Sans Regular";
+  font-family: "Archimoto Font Black";
+  font-size: 1.2rem !important;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  padding: 1.5rem 2rem;
+  position: relative;
+
+  &::after {
+    background-color: $secondary;
+    transition: width 0.3s ease-in;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    z-index: -1;
   }
 
   &:hover {
-    background-color: $primary;
+    color: $w !important;
+
+    &::after {
+      width: 100%;
+    }
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .central-form {
-    width: 98%;
-  }
-  .back-form {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 30px;
-    max-width: 1100px;
-  }
-
-  form {
-    flex: 0.9;
-  }
+.submit-btn:active {
+  transform: translateY(2px);
 }
 
-@media screen and (max-width: 600px) {
-  .main-container {
-    padding-bottom: 0;
-  }
+.svg-container {
+  margin-bottom: 20px;
+}
 
+@media (min-width: 600px) {
   .central-form {
-    max-width: 85%;
+    padding: 2.5rem;
+    width: 100%;
   }
 
-  .title p {
-    font-size: 25px;
+  .form-group input,
+  .form-group textarea {
+    max-width: 100%;
   }
 }
