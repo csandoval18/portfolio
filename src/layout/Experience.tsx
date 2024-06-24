@@ -5,7 +5,7 @@ interface ExperienceProps {}
 
 const Experience: React.FC<ExperienceProps> = () => {
   return (
-    <section className="Experience">
+    <section className="Experience" id="Experience">
       <div className="category-header">
         <CgToolbox />
         <h2>Experience</h2>

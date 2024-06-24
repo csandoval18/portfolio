@@ -1,13 +1,12 @@
 import React from "react"
 import { MdPictureAsPdf } from "react-icons/md"
 import resumePng from "/images/resume-2024.png"
-import resumePdf from "/documents/resume-2024.pdf"
 
 interface ResumeProps {}
 
 const Resume: React.FC<ResumeProps> = () => {
   return (
-    <div className="Resume">
+    <section className="Resume" id="Resume">
       <div className="category-header">
         <MdPictureAsPdf />
         <h2>Resume</h2>
@@ -15,7 +14,7 @@ const Resume: React.FC<ResumeProps> = () => {
       <div className="resume-content">
         <img src={resumePng} alt="" />
 
-        <h3>Grab a copy 😊</h3>
+        <span>Grab a copy 😊</span>
         <a
           className="btn btn-primary"
           href="/documents/resume-2024.pdf"
@@ -24,7 +23,7 @@ const Resume: React.FC<ResumeProps> = () => {
           Download Resume
         </a>
       </div>
-    </div>
+    </section>
   )
 }
 

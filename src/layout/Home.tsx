@@ -9,8 +9,8 @@ interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
   return (
-    <section className="Home">
-      <section className="Hero">
+    <section className="Home" id="Home">
+      <section className="Hero" id="Hero">
         <div className="hero-layout">
           <div className="title">
             <div className="header-wrapper">

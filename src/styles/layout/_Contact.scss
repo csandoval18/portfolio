@@ -36,10 +36,10 @@
     position: absolute;
     top: -80px;
     scale: 0.7;
-    user-drag: none; /* Standard syntax */
-    -webkit-user-drag: none; /* WebKit/Blink browsers */
-    -moz-user-drag: none; /* Gecko browsers */
-    -ms-user-drag: none; /* Internet Explorer/Edge */
+    user-drag: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
   }
 }
 
@@ -70,7 +70,7 @@
   border-radius: 10px;
   color: $b;
   font-family: "Samsung Sharp Sans Regular";
-  font-size: 1.2rem;
+  font-size: 0.85rem;
   padding: 10px;
   width: 100%;
   max-width: 500px;

@@ -8,7 +8,7 @@ interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer className="Footer container">
+    <footer className="Footer container" id="Footer">
       <div className="top-footer">
         <a href="/" className="logo">
           <FaPiedPiper />

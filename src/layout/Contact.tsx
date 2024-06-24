@@ -9,7 +9,7 @@ const Contact = () => {
   const [message, setMessage] = useState("")
 
   return (
-    <section className="Contact">
+    <section className="Contact" id="Contact">
       <div className="category-header">
         <GrContactInfo />
         <h2>Contact</h2>
