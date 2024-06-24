@@ -22,23 +22,30 @@ const Experience: React.FC<ExperienceProps> = () => {
             Updated and maintained client website assets, content, plugins,
             extensions, and libraries through CMS software such as NopCommerce,
             DNN, Wordpress, etc.
-          </li>{" "}
+          </li>
           <li>
             Performed SEO maintenance on client websites, improving and
             generating structured data for website content. Modernized
             environment and UI of legacy and outdated client websites.
-          </li>{" "}
+          </li>
           <li>
             Implemented dynamic web applications based on client requirements.
           </li>
         </ul>
         <h4> Student Developer | University of Wisconsin - Whitewater</h4>
-        <span>Apr 2021 – May 2022</span> Developed and maintained web
-        applications using Laravel, HTML, jQuery, and MySQL. The applications
-        were for use of residence hall front desk workers, students, and staff.
-        Developed and maintained University domain pages for the housing
-        department using Ingeniux CMS. Troubleshoot problems and aiding students
-        with personal account issues in the campus system.
+        <span>Apr 2021 – May 2022</span>
+        <ul>
+          <li>
+            Developed and maintained web applications using Laravel, HTML,
+            jQuery, and MySQL. The applications were for use of residence hall
+            front desk workers, students, and staff.
+          </li>
+          <li>
+            Developed and maintained University domain pages for the housing
+            department using Ingeniux CMS. Troubleshoot problems and aiding
+            students with personal account issues in the campus system.
+          </li>
+        </ul>
       </div>
     </section>
   )

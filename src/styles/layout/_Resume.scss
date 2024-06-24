@@ -1,0 +1,18 @@
+.Resume {
+  .resume-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+
+    h3 {
+      font-family: "Archimoto Font Black";
+    }
+
+    img {
+      max-width: 500px;
+    }
+  }
+}

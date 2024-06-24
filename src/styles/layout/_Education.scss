@@ -1,11 +1,13 @@
 .Education {
   .education-content {
+    background-color: rgb(255, 255, 255);
+    filter: url(#grain-texture);
+    padding-top: 8rem;
     padding-bottom: 8rem;
 
     .education-card {
       align-items: center;
-      background-color: transparent;
-      // box-shadow: -30px 30px 0px 15px rgba(0, 0, 0, 0.08);
+      background-color: rgb(255, 255, 255);
       box-shadow: -40px -30px 0px 0px rgba($secondary, 1);
       border-radius: 1.2rem;
       border: 2px solid $b;
@@ -50,7 +52,7 @@
     }
 
     h4 {
-      font-family: "Archimoto Font Black" !important;
+      font-family: "Archimoto Font Black";
       margin-top: 3rem;
       margin-bottom: 2.5rem;
     }
