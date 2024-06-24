@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { FaPiedPiper } from "react-icons/fa"
+import { Link } from "react-scroll"
 
 interface NavbarProps {}
 
@@ -8,11 +9,10 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <nav className="navbar container">
-      <a href="/" className="logo">
-        {/* <Image src="/logo-w.webp" alt="" width={100} height={60}></Image> */}
+      <Link smooth={true} to="Hero" className="logo">
         <FaPiedPiper />
         CAS
-      </a>
+      </Link>
       <div
         onClick={() => {
           setOpenMenu(!openMenu)
@@ -23,16 +23,24 @@ const Navbar: React.FC<NavbarProps> = () => {
       >
         <ul className="navMenu">
           <li>
-            <a href="#">Skills</a>
+            <Link smooth={true} to="Skills" offset={-55}>
+              Skills
+            </Link>
           </li>
           <li>
-            <a href="#">Education</a>
+            <Link smooth={true} to="Education" offset={-55}>
+              Education
+            </Link>
           </li>
           <li>
-            <a href="#">Experience</a>
+            <Link smooth={true} to="Experience" offset={-55}>
+              Experience
+            </Link>
           </li>
           <li>
-            <a href="#">Resume</a>
+            <Link smooth={true} to="Resume" offset={-55}>
+              Resume
+            </Link>
           </li>
         </ul>
       </div>

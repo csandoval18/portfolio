@@ -4,6 +4,7 @@ import Skills from "./Skills"
 import Contact from "./Contact"
 import Resume from "./Resume"
 import Experience from "./Experience"
+import { Link } from "react-scroll"
 
 interface HomeProps {}
 
@@ -20,12 +21,22 @@ const Home: React.FC<HomeProps> = () => {
                 <span className="second-last-name">Sandoval</span>
               </h1>
               <div className="hero-btns-layout">
-                <a className="btn btn-primary" href="/contact">
+                <Link
+                  className="btn btn-primary"
+                  smooth={true}
+                  to="Resume"
+                  offset={-55}
+                >
                   Get Resume
-                </a>
-                <a className="btn btn-border" href="/contact">
+                </Link>
+                <Link
+                  className="btn btn-border"
+                  smooth={true}
+                  to="Footer"
+                  offset={-55}
+                >
                   Contact Info
-                </a>
+                </Link>
               </div>
             </div>
           </div>

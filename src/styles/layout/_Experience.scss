@@ -1,7 +1,11 @@
 .Experience {
   .experience-content {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    h4 {
+      font-size: 1.3rem;
+    }
 
     span {
       display: block;
@@ -16,10 +20,20 @@
 
     ul li {
       color: lighten($fg, 10);
-      font-family: "Archimoto Font Black";
       font-family: "Archimoto Font Thin";
       line-height: 1.5rem;
       margin-bottom: 1rem;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    .experience-content {
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+
+      h4 {
+        font-size: 1.5rem;
+      }
     }
   }
 }

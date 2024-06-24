@@ -1,6 +1,5 @@
 .navbar {
   align-items: center;
-  // background-color: rgba($b, 0.2);
   background-color: rgba($w, 0.7);
   backdrop-filter: blur(15px);
   box-shadow: 4px 2px 30px 12px rgba(22, 22, 22, 0.098);
@@ -58,7 +57,8 @@
 
   a {
     border-bottom: 1px solid rgba($grey, 0.5);
-    color: $w;
+    color: $fg;
+    cursor: pointer;
     display: block;
     font-size: 16px;
     font-weight: 600;
@@ -71,7 +71,7 @@
 
     &:hover {
       background-color: $primary;
-      color: $b;
+      color: $fg;
     }
   }
 }
@@ -88,12 +88,12 @@
       background-color: transparent;
 
       &::before {
-        background-color: $primary;
+        background-color: $fg;
         transform: rotate(45deg);
       }
 
       &::after {
-        background-color: $primary;
+        background-color: $fg;
         transform: rotate(-45deg);
       }
     }
@@ -151,11 +151,11 @@
     a {
       background-color: transparent;
       border: none;
-      color: $b;
+      color: $fg;
       padding: 1rem 0;
 
       &::after {
-        background-color: $b;
+        background-color: $fg;
         content: "";
         display: block;
         height: 2px;
@@ -166,13 +166,13 @@
 
       &:hover::after {
         height: 2px;
-        background-color: $b;
+        background-color: $fg;
         width: 100%;
       }
 
       &:hover {
         background-color: transparent;
-        color: $b !important;
+        color: $fg !important;
       }
     }
   }

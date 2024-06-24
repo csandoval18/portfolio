@@ -19,7 +19,7 @@ const Education: React.FC<EducationProps> = () => {
               University of Wisconsin - <span>Whitewater</span>
             </h3>
           </div>
-          <p>Major: Bachelors of Science - Computer Science</p>
+          <p>Major: Bachelor's of Science - Computer Science</p>
           <p>GPA: 3.45</p>
 
           <div className="courses">

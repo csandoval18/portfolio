@@ -21,7 +21,7 @@ main {
   }
 
   .top-footer {
-    align-items: start;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +52,7 @@ main {
     }
 
     .block {
-      align-items: start;
+      align-items: center;
       display: flex;
       flex-direction: column;
       margin-top: 10px;
@@ -94,13 +94,15 @@ main {
 
 @media (min-width: $laptop) {
   .Footer .top-footer {
+    align-items: start;
+
     display: flex;
     flex-direction: row;
     // gap: 6rem;
     justify-content: space-evenly;
 
     .block {
-      // align-items: center;
+      align-items: start;
       display: flex;
       flex-direction: column;
       margin-top: 10px;
