@@ -10,6 +10,7 @@
 .central-form {
   background-color: $b;
   border-radius: 15px;
+  // filter: url(#grain-texture);
   max-width: 800px;
   padding: 30px;
   position: relative;
@@ -65,7 +66,7 @@
 
 .form-group input,
 .form-group textarea {
-  background-color: $w;
+  background-color: rgba($w, 0.85);
   border: none;
   border-radius: 10px;
   color: $b;

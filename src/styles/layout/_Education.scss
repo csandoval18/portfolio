@@ -1,25 +1,24 @@
 .Education {
   .education-content {
-    background-color: rgb(255, 255, 255);
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 
     .education-card {
+      border-radius: 1.2rem;
+      padding: 4rem 1.5rem;
+
       align-items: center;
       background-color: rgb(255, 255, 255);
-      box-shadow: -40px -30px 0px 0px rgba($secondary, 1);
-      border-radius: 1.2rem;
       border: 2px solid $b;
+      box-shadow: -40px -30px 0px 0px rgba($secondary, 1);
       display: flex;
-      filter: url(#grain-texture);
       flex-direction: column;
+      filter: url(#grain-texture);
       justify-content: center;
-      padding: 4rem 6rem;
     }
 
     .university-header {
       align-items: center;
-      // background-color: blue;
       display: flex;
       flex-direction: column;
 
@@ -35,17 +34,24 @@
 
     .courses {
       display: flex;
-      margin-top: 6rem;
-      gap: 0.8rem;
+      flex-direction: column;
     }
 
     h3 {
-      align-items: center;
       display: flex;
-      gap: 0.8rem;
-      justify-content: right;
+      align-items: center;
+      flex-direction: row;
 
-      & > span {
+      svg {
+        display: none;
+      }
+
+      span {
+        font-family: "Samsung Sharp Sans Bold";
+        text-align: center;
+      }
+
+      .purple {
         color: $secondary;
         font-family: "Samsung Sharp Sans Bold";
       }
@@ -55,25 +61,66 @@
       font-family: "Archimoto Font Black" !important;
     }
 
+    ul,
+    li {
+      font-family: "Archimoto Font Medium";
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
     p {
       font-family: "Archimoto Font Black";
       font-size: 1.1rem;
     }
+  }
+}
+@media (min-width: $tablet) {
+}
 
-    ul,
-    li {
-      font-family: "Archimoto Font Black";
-    }
+@media (min-width: 1195px) {
+  .Education {
+    .education-content {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
 
-    ul {
-      padding-left: 20px;
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(5, 1fr);
-    }
+      .education-card {
+        border-radius: 1.2rem;
+        padding: 4rem 6rem;
+      }
 
-    li {
-      margin-bottom: 1.2rem;
+      .university-header {
+        align-items: center;
+
+        &::after {
+          height: 4px;
+          width: 100px;
+        }
+      }
+
+      .courses {
+        flex-direction: row;
+        margin-top: 6rem;
+        gap: 0.8rem;
+      }
+
+      h3 {
+        align-items: center;
+        gap: 0.8rem;
+        justify-content: right;
+      }
+
+      ul {
+        padding-left: 20px;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      li {
+        margin-bottom: 1.2rem;
+      }
     }
   }
 }

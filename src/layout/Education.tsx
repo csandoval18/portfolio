@@ -14,18 +14,19 @@ const Education: React.FC<EducationProps> = () => {
       <div className="education-content container">
         <div className="education-card grain-texture">
           <div className="university-header">
-            <div>
+            <h3>
               <LiaUniversitySolid />
-              <h3>
-                University of Wisconsin - <span>Whitewater</span>
-              </h3>
-            </div>
+              <span>
+                University of Wisconsin -
+                <span className="purple">Whitewater</span>
+              </span>
+            </h3>
           </div>
           <p>Major: Bachelor's of Science - Computer Science</p>
           <p>GPA: 3.45</p>
 
           <div className="courses">
-            <h4>Relevant Courses:</h4>
+            <h4>Relevant Courses</h4>
             <ul>
               <li>Data Structures</li>
               <li> Theory of Algorithms</li>

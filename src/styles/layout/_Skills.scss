@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     text-align: center;
 
     .intro-p {
@@ -13,20 +15,33 @@
 
     .card {
       background-color: $w;
-      margin-top: 6rem;
       transition: 0.3s color ease-in, background-color 0.3s ease-in;
+
+      &:hover {
+        background-color: $fg;
+
+        h3 {
+          color: $secondary;
+        }
+
+        p {
+          color: $bg;
+        }
+      }
     }
   }
 }
 
 .skill-wrapper {
+  padding-block: 3rem;
+
   h4,
   ul li {
     font-family: "Archimoto Font Medium";
   }
 
   h4 {
-    margin-bottom: 50px;
+    margin-bottom: 2.5rem;
   }
 
   ul {
@@ -61,28 +76,11 @@
 }
 
 @media (min-width: $tablet) {
-  .Skills {
-    padding-top: 8rem;
-  }
-
   .intro {
-    text-align: center;
     padding-bottom: 8rem;
 
     h3 {
       margin-bottom: 2rem;
-    }
-
-    .card:hover {
-      background-color: $fg;
-
-      h3 {
-        color: $secondary;
-      }
-
-      p {
-        color: $bg;
-      }
     }
 
     .intro-p {
