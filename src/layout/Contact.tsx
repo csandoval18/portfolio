@@ -3,12 +3,14 @@ import ContactSVG from "../assets/contact.svg" // Ensure this path is correct
 import { IoIosSend } from "react-icons/io"
 import { GrContactInfo } from "react-icons/gr"
 import emailjs from "emailjs-com"
+import { ClipLoader } from "react-spinners"
 
 const Contact = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   const [status, setStatus] = useState("")
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     // Function to initialize EmailJS after the component mounts
@@ -28,8 +30,9 @@ const Contact = () => {
     }
   }, [])
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
+    setLoading(true) // Set loading state to true
 
     const serviceID = import.meta.env.VITE_SERVICE_ID
     const templateID = import.meta.env.VITE_TEMPLATE_ID
@@ -48,10 +51,12 @@ const Contact = () => {
         setName("")
         setEmail("")
         setMessage("")
+        setLoading(false) // Reset loading state
       },
       (err) => {
         console.log("FAILED...", err)
         setStatus("FAILED")
+        setLoading(false) // Reset loading state
       }
     )
   }
@@ -97,9 +102,15 @@ const Contact = () => {
               />
             </div>
             <div className="btn-wrapper">
-              <button type="submit" className="submit-btn">
-                Send
-                <IoIosSend />
+              <button type="submit" className="submit-btn" disabled={loading}>
+                {loading ? (
+                  <ClipLoader color="#ffffff" size={20} />
+                ) : (
+                  <>
+                    Send
+                    <IoIosSend />
+                  </>
+                )}
               </button>
             </div>
             {status === "SUCCESS" && (
