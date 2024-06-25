@@ -42,6 +42,11 @@ const Navbar: React.FC<NavbarProps> = () => {
               Resume
             </Link>
           </li>
+          <li>
+            <Link smooth={true} to="Contact" offset={-55}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
       <div
