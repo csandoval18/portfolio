@@ -13,26 +13,18 @@ const Contact = () => {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    // Function to initialize EmailJS after the component mounts
     const initializeEmailJS = () => {
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-
-      // Initialize EmailJS with the public key
       emailjs.init(publicKey)
     }
 
-    // Call the initialization function
     initializeEmailJS()
-
-    // Clean-up function if needed
-    return () => {
-      // Optionally clean up any resources
-    }
+    return () => {}
   }, [])
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setLoading(true) // Set loading state to true
+    setLoading(true)
 
     const serviceID = import.meta.env.VITE_SERVICE_ID
     const templateID = import.meta.env.VITE_TEMPLATE_ID
@@ -46,17 +38,17 @@ const Contact = () => {
 
     emailjs.send(serviceID, templateID, templateParams, publicKey).then(
       (res) => {
-        console.log("SUCCESS!", res.status, res.text)
+        console.log("EMAIL SENT SUCCESSFULLY!", res.status, res.text)
         setStatus("SUCCESS")
         setName("")
         setEmail("")
         setMessage("")
-        setLoading(false) // Reset loading state
+        setLoading(false)
       },
       (err) => {
         console.log("FAILED...", err)
         setStatus("FAILED")
-        setLoading(false) // Reset loading state
+        setLoading(false)
       }
     )
   }
