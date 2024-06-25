@@ -17,33 +17,56 @@ const Navbar: React.FC<NavbarProps> = () => {
         onClick={() => {
           setOpenMenu(!openMenu)
         }}
-        className={
-          openMenu ? "navMenuWrapper" + " " + "open" : "navMenuWrapper"
-        }
+        className={openMenu ? "navMenuWrapper " + "open" : "navMenuWrapper"}
       >
         <ul className="navMenu">
           <li>
-            <Link smooth={true} to="Skills" offset={-55}>
+            <Link
+              smooth={true}
+              to="Skills"
+              offset={-55}
+              onClick={() => setOpenMenu(false)}
+            >
               Skills
             </Link>
           </li>
           <li>
-            <Link smooth={true} to="Education" offset={-55}>
+            <Link
+              smooth={true}
+              to="Education"
+              offset={-55}
+              onClick={() => setOpenMenu(false)}
+            >
               Education
             </Link>
           </li>
           <li>
-            <Link smooth={true} to="Experience" offset={-55}>
+            <Link
+              smooth={true}
+              to="Experience"
+              offset={-55}
+              onClick={() => setOpenMenu(false)}
+            >
               Experience
             </Link>
           </li>
           <li>
-            <Link smooth={true} to="Resume" offset={-55}>
+            <Link
+              smooth={true}
+              to="Resume"
+              offset={-55}
+              onClick={() => setOpenMenu(false)}
+            >
               Resume
             </Link>
           </li>
           <li>
-            <Link smooth={true} to="Contact" offset={-55}>
+            <Link
+              smooth={true}
+              to="Contact"
+              offset={-55}
+              onClick={() => setOpenMenu(false)}
+            >
               Contact
             </Link>
           </li>
