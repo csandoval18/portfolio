@@ -15,7 +15,7 @@
     font-family: "AhganiryaFont";
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
-    transition: z-index 0.3s ease-in-out;
+    transition: z-index 0.3s ease-in-out, scale 0.3s ease-in;
     z-index: 100;
 
     svg {

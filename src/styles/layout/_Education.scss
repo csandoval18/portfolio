@@ -102,6 +102,11 @@
         flex-direction: row;
         margin-top: 6rem;
         gap: 0.8rem;
+        text-align: center;
+
+        h4 {
+          max-width: 200px;
+        }
       }
 
       h3 {
@@ -111,14 +116,15 @@
       }
 
       ul {
-        padding-left: 20px;
         display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(5, 1fr);
+        gap: 1.5rem;
+        grid-template-columns: repeat(5, 130px);
+        padding-left: 0;
       }
 
       li {
         margin-bottom: 1.2rem;
+        padding-left: 0;
       }
     }
   }

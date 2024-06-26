@@ -29,12 +29,12 @@ const Education: React.FC<EducationProps> = () => {
             <h4>Relevant Courses</h4>
             <ul>
               <li>Data Structures</li>
-              <li> Theory of Algorithms</li>
-              <li> Server-Side Scripting</li>
+              <li>Theory of Algorithms</li>
+              <li>Server-Side Scripting</li>
               <li>Advanced Web App Development</li>
               <li>Theory of Computation</li>
               <li>Visual Design for Digital Media</li>
-              <li>JavaScript/DHTML</li>
+              <li>JavaScript & DHTML</li>
               <li>Software Engineering</li>
               <li>Web Server and Unix Administration</li>
               <li>Computer Organization/ System</li>
