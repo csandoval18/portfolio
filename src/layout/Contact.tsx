@@ -62,7 +62,7 @@ const Contact = () => {
       <div className="main-container container">
         <div className="central-form">
           <img className="svg-design" src={ContactSVG} alt="Contact" />
-          <h2>Contact</h2>
+          {/* <h2>Contact</h2> */}
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Name</label>

@@ -9,7 +9,12 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <nav className="navbar container">
-      <Link smooth={true} to="Hero" className="logo">
+      <Link
+        smooth={true}
+        to="Hero"
+        className="logo"
+        onClick={() => setOpenMenu(false)}
+      >
         <FaPiedPiper />
         CAS
       </Link>

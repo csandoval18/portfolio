@@ -13,8 +13,6 @@ const Resume: React.FC<ResumeProps> = () => {
       </div>
       <div className="resume-content container">
         <img src={resumePng} alt="" />
-
-        <span>Grab a copy 😊</span>
         <a
           className="btn btn-primary"
           href="/documents/resume-2024.pdf"
