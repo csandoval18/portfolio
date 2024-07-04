@@ -62,7 +62,6 @@ const Contact = () => {
       <div className="main-container container">
         <div className="central-form">
           <img className="svg-design" src={ContactSVG} alt="Contact" />
-          {/* <h2>Contact</h2> */}
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Name</label>
@@ -104,13 +103,15 @@ const Contact = () => {
                   </>
                 )}
               </button>
+              {status === "SUCCESS" && (
+                <p className="success">Message sent successfully!</p>
+              )}
+              {status === "FAILED" && (
+                <p className="error">
+                  Failed to send message. Please try again.
+                </p>
+              )}
             </div>
-            {status === "SUCCESS" && (
-              <p className="success">Message sent successfully!</p>
-            )}
-            {status === "FAILED" && (
-              <p className="error">Failed to send message. Please try again.</p>
-            )}
           </form>
         </div>
       </div>

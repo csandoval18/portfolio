@@ -24,7 +24,7 @@
 
   h2 {
     color: $primary;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
     z-index: 100;
   }
@@ -79,51 +79,58 @@
   align-items: center;
   margin-bottom: 20px;
   width: 100%;
-}
 
-.form-group label {
-  color: $w;
-  font-family: "Archimoto Font Black";
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  z-index: 100;
+  label {
+    color: $w;
+    font-family: "Archimoto Font Black";
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    z-index: 100;
 
-  &:hover {
-    cursor: text;
+    &:hover {
+      cursor: text;
+    }
   }
-}
 
-.form-group input,
-.form-group textarea {
-  background-color: rgba($w, 1);
-  border: none;
-  border-radius: 10px;
-  color: $b;
-  font-family: "Samsung Sharp Sans Regular";
-  font-size: 0.85rem;
-  padding: 10px;
-  width: 100%;
-  max-width: 500px;
-  margin-bottom: 10px;
-  transition: background-color 0.3s;
-  z-index: 100;
-}
+  input,
+  textarea {
+    background-color: rgba($w, 1);
+    border: none;
+    border-radius: 10px;
+    color: $b;
+    font-family: "Samsung Sharp Sans Regular";
+    font-size: 0.85rem;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    z-index: 100;
+  }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  background-color: $secondary;
-  outline: none;
-}
+  input:focus,
+  textarea:focus {
+    background-color: $secondary;
+    outline: none;
+  }
 
-.form-group textarea {
-  height: 150px;
-  resize: none;
+  textarea {
+    height: 150px;
+    resize: none;
+  }
 }
 
 .btn-wrapper {
   align-items: center;
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: center;
+
+  .success,
+  .error {
+    color: $bg;
+  }
 }
 
 .submit-btn {
