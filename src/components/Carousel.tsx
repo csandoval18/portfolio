@@ -1,22 +1,17 @@
-import { AiOutlineConsoleSql } from "react-icons/ai"
 import { BiLogoPostgresql } from "react-icons/bi"
 import {
   FaAws,
-  FaCss3Alt,
   FaDocker,
   FaHtml5,
   FaNode,
   FaPython,
-  FaReact,
+  FaReact
 } from "react-icons/fa"
 import {
-  SiAdobeillustrator,
-  SiAdobephotoshop,
   SiCplusplus,
   SiJavascript,
   SiRedis,
-  SiSass,
-  SiTypescript,
+  SiSass
 } from "react-icons/si"
 import LazyIcon from "./LazyIcon"
 
