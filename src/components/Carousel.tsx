@@ -27,17 +27,12 @@ const Carousel: React.FC<CarouselProps> = () => {
   const icons = <>
     <LazyIcon><FaPython className="icon" /></LazyIcon>
     <LazyIcon><SiCplusplus className="icon" /></LazyIcon>
-    <LazyIcon><AiOutlineConsoleSql className="icon" /></LazyIcon>
     <LazyIcon><BiLogoPostgresql className="icon" /></LazyIcon>
     <LazyIcon><SiRedis className="icon" /></LazyIcon>
-    <LazyIcon><SiAdobephotoshop className="icon" /></LazyIcon>
-    <LazyIcon><SiAdobeillustrator className="icon" /></LazyIcon>
     <LazyIcon><FaNode className="icon" /></LazyIcon>
     <LazyIcon><FaHtml5 className="icon" /></LazyIcon>
-    <LazyIcon><FaCss3Alt className="icon" /></LazyIcon>
     <LazyIcon><SiSass className="icon" /></LazyIcon>
     <LazyIcon><SiJavascript className="icon" /></LazyIcon>
-    <LazyIcon><SiTypescript className="icon" /></LazyIcon>
     <LazyIcon><FaReact className="icon" /></LazyIcon>
     <LazyIcon><FaAws className="icon" /></LazyIcon>
     <LazyIcon><FaDocker className="icon" /></LazyIcon>
