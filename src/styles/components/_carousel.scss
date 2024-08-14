@@ -40,6 +40,10 @@
   }
 }
 
+.icon-container {
+  display: inline;
+}
+
 @keyframes slide {
   from {
     transform: translateX(0);

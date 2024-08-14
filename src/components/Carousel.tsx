@@ -19,40 +19,42 @@ import {
   SiSass,
   SiTypescript,
 } from "react-icons/si"
+import LazyIcon from "./LazyIcon"
 
 interface CarouselProps {}
 
-const Carousel: React.FC<CarouselProps> = () => {
-  const logoSliderRef = useRef<HTMLDivElement>(null)
-  const logosSlideRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
-    if (logosSlideRef.current && logoSliderRef.current) {
-      const copy = logosSlideRef.current.cloneNode(true)
-      logoSliderRef.current.appendChild(copy)
-    }
-  }, [])
+const Carousel: React.FC<CarouselProps> = () => {
+  const icons = <>
+    <LazyIcon><FaPython className="icon" /></LazyIcon>
+    <LazyIcon><SiCplusplus className="icon" /></LazyIcon>
+    <LazyIcon><AiOutlineConsoleSql className="icon" /></LazyIcon>
+    <LazyIcon><BiLogoPostgresql className="icon" /></LazyIcon>
+    <LazyIcon><SiRedis className="icon" /></LazyIcon>
+    <LazyIcon><SiAdobephotoshop className="icon" /></LazyIcon>
+    <LazyIcon><SiAdobeillustrator className="icon" /></LazyIcon>
+    <LazyIcon><FaNode className="icon" /></LazyIcon>
+    <LazyIcon><FaHtml5 className="icon" /></LazyIcon>
+    <LazyIcon><FaCss3Alt className="icon" /></LazyIcon>
+    <LazyIcon><SiSass className="icon" /></LazyIcon>
+    <LazyIcon><SiJavascript className="icon" /></LazyIcon>
+    <LazyIcon><SiTypescript className="icon" /></LazyIcon>
+    <LazyIcon><FaReact className="icon" /></LazyIcon>
+    <LazyIcon><FaAws className="icon" /></LazyIcon>
+    <LazyIcon><FaDocker className="icon" /></LazyIcon>
+    </>
 
   return (
     <div className="Carousel">
-      <div className="logo-slider" ref={logoSliderRef}>
-        <div className="logos-slide" ref={logosSlideRef}>
-          <FaPython className="icon" />
-          <SiCplusplus className="icon" />
-          <AiOutlineConsoleSql className="icon" />
-          <BiLogoPostgresql className="icon" />
-          <SiRedis className="icon" />
-          <SiAdobephotoshop className="icon" />
-          <SiAdobeillustrator className="icon" />
-          <FaNode className="icon" />
-          <FaHtml5 className="icon" />
-          <FaCss3Alt className="icon" />
-          <SiSass className="icon" />
-          <SiJavascript className="icon" />
-          <SiTypescript className="icon" />
-          <FaReact className="icon" />
-          <FaAws className="icon" />
-          <FaDocker className="icon" />
+      <div className="logo-slider" 
+      >
+        <div className="logos-slide"
+        >
+        {icons}
+        </div>
+        <div className="logos-slide"
+        >
+        {icons}
         </div>
       </div>
     </div>

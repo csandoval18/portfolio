@@ -14,11 +14,11 @@ const Resume: React.FC<ResumeProps> = () => {
       <div className="resume-content container">
         <img src={resumePng} alt="" />
         <a
-          className="btn btn-primary"
+          className="btn btn-secondary"
           href="/documents/resume-2024.pdf"
           download="csandoval-resume.pdf"
         >
-          Download Resume
+          Download
         </a>
       </div>
     </section>
