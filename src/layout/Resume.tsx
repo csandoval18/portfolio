@@ -1,6 +1,6 @@
 import React from "react"
 import { MdPictureAsPdf } from "react-icons/md"
-import resumePng from "/images/resume-2024.png"
+import resumePng from "/images/resume-2024.webp"
 
 interface ResumeProps {}
 
