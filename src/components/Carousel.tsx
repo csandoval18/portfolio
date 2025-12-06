@@ -2,7 +2,6 @@ interface CarouselProps {}
 import cppIcon from '../assets/carousel-icons/cpp-icon.webp'
 import dockerIcon from '../assets/carousel-icons/docker-icon.webp'
 import golangIcon from '../assets/carousel-icons/golang-icon.webp'
-import htmlIcon from '../assets/carousel-icons/html-icon.webp'
 import jsIcon from '../assets/carousel-icons/js-icon.webp'
 import tsIcon from '../assets/carousel-icons/ts-icon.webp'
 import mongodbIcon from '../assets/carousel-icons/mongodb-icon.webp'
